@@ -1,1 +1,5 @@
 .sass-cache
+*DS*
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/.idea/watcherTasks.xml
