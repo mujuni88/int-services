@@ -1,0 +1,131 @@
+@import "variables";
+@import "bootstrap";
+@import "compass";
+
+// Variables
+$sm-handheld: 320px;
+$lg-handheld: 480px;
+$xs-screens: 768px;
+$sm-screens: 992px;
+$lg-screens: 1200px;
+$background-image-body: "../images/bg_1920.jpg";
+
+// Mixins
+@mixin bg($url: $background-image-body, $bg-clr: $body-bg) {
+  background: {
+	color: $bg-clr;
+	image: url($url);
+	repeat: no-repeat;
+	position: top center;
+  }
+}
+
+@mixin sprite($x, $y) {
+  background: {
+	image: url($bg-sprite-img);
+	repeat: no-repeat;
+	position: $x $y;
+  }
+}
+
+@mixin border-radius($tl: 6px, $tr: 6px, $bl: 0, $br: 0) {
+  border-radius: $tl $tr $bl $br;
+}
+
+@mixin respond-to($media) {
+  @if $media == sm-handheld {
+	@media only screen and (max-width: $sm-handheld) {
+	  @content;
+	}
+  } @else if $media == lg-handheld {
+	@media only screen and (max-width: $lg-handheld) {
+	  @content;
+	}
+  } @else if $media == xs-screens {
+	@media only screen and (max-width: $xs-screens) {
+	  @content;
+	}
+  } @else if $media == sm-screens {
+	@media only screen and (min-width: $sm-screens + 1) {
+	  @content;
+	}
+  } @else if $media == md-screens {
+	@media only screen and (min-width: $sm-screens + 1) {
+	  @content;
+	}
+  } @else if $media == wide-screens {
+	@media only screen and (min-width: $lg-screens) {
+	  @content;
+	}
+  }
+
+}
+
+// Utilities
+
+.theme-default {
+  @include bg($background-image-body);
+  @include background-size();
+}
+
+.pd-right-10 {
+  padding-right: 10px;
+}
+
+.pd-left-10 {
+  padding-left: 10px;
+}
+
+.pd-top-10{
+  padding-top: 10px;
+}
+.pd-btm-10{
+  padding-bottom: 10px;
+}
+
+.pd-right-20 {
+  padding-right: 20px;
+}
+
+.pd-left-20 {
+  padding-left: 20px;
+}
+
+.pd-top-20{
+  padding-top: 20px;
+}
+
+.pd-btm-20{
+  padding-btm: 20px;
+}
+
+.mg-right-22{
+  margin-right:22px;
+}
+
+
+.pull-up-20{
+  margin-top:-20px;
+}
+
+.brd-rd-10 {
+  border-radius: 10px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+// Headers
+header {
+
+}
+
+// Main
+main {
+  background-color: $body-bg;
+}
+
+
+
+// Nav

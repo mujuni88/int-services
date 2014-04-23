@@ -18,11 +18,9 @@ html
 			filter: none;
 			}
 
-		link(rel='stylesheet', href='resources/css/bootstrap-etf.css')
 		link(rel='stylesheet', href='resources/css/mobile_header.css')
 		link(rel='stylesheet', href='resources/css/mobile_footer.css')
-		link(rel='stylesheet', href='resources/css/common.css')
-		link(rel='stylesheet', href='resources/css/new-plan.css')
+		link(rel='stylesheet', href='resources/css/promo-int-services.css')
 		//
 			end styles
 		//
@@ -30,20 +28,13 @@ html
 
 		script(src='resources/js/jquery.1.11.0.min.js')
 		script.
-			var $jQ_1_11_0 = $.noConflict(true);
+			var jQuery_1_11_0 = $.noConflict(true);
+		script(src='resources/js/bootstrap-tab.js')
 		script(src='resources/js/promo-int-services.js')
 	body
-		.container-fluid.theme_herospace(ng-app='app')
+		.container-fluid.theme_default
 			.container
-				#top.
-					International Services
-				.content(ng-controller="AppCtrl", ng-init="init()")
-
-					a.back-to-top(href="#") Back to Top
-
-				//
-					content
-			//
-				container
-		//
-			container-fluid
+				header
+					p.h1 International Services
+				main
+					.content
