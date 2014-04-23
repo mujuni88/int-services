@@ -7594,10 +7594,10 @@ button.close {
     display: none !important;
   }
 }
-/* line 66, ../sass/promo-int-services.scss */
-.theme-default {
+/* line 60, ../sass/promo-int-services.scss */
+.theme_default {
   background-color: white;
-  background-image: url("../images/bg_1920.jpg");
+  background-image: url(../images/bg-1920.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-background-size: 100% auto;
@@ -7606,67 +7606,67 @@ button.close {
   background-size: 100% auto;
 }
 
-/* line 71, ../sass/promo-int-services.scss */
+/* line 65, ../sass/promo-int-services.scss */
 .pd-right-10 {
   padding-right: 10px;
 }
 
-/* line 75, ../sass/promo-int-services.scss */
+/* line 69, ../sass/promo-int-services.scss */
 .pd-left-10 {
   padding-left: 10px;
 }
 
-/* line 79, ../sass/promo-int-services.scss */
+/* line 73, ../sass/promo-int-services.scss */
 .pd-top-10 {
   padding-top: 10px;
 }
 
-/* line 82, ../sass/promo-int-services.scss */
+/* line 76, ../sass/promo-int-services.scss */
 .pd-btm-10 {
   padding-bottom: 10px;
 }
 
-/* line 86, ../sass/promo-int-services.scss */
+/* line 80, ../sass/promo-int-services.scss */
 .pd-right-20 {
   padding-right: 20px;
 }
 
-/* line 90, ../sass/promo-int-services.scss */
+/* line 84, ../sass/promo-int-services.scss */
 .pd-left-20 {
   padding-left: 20px;
 }
 
-/* line 94, ../sass/promo-int-services.scss */
+/* line 88, ../sass/promo-int-services.scss */
 .pd-top-20 {
   padding-top: 20px;
 }
 
-/* line 98, ../sass/promo-int-services.scss */
+/* line 92, ../sass/promo-int-services.scss */
 .pd-btm-20 {
   padding-btm: 20px;
 }
 
-/* line 102, ../sass/promo-int-services.scss */
+/* line 96, ../sass/promo-int-services.scss */
 .mg-right-22 {
   margin-right: 22px;
 }
 
-/* line 107, ../sass/promo-int-services.scss */
+/* line 101, ../sass/promo-int-services.scss */
 .pull-up-20 {
   margin-top: -20px;
 }
 
-/* line 111, ../sass/promo-int-services.scss */
+/* line 105, ../sass/promo-int-services.scss */
 .brd-rd-10 {
   border-radius: 10px;
 }
 
-/* line 115, ../sass/promo-int-services.scss */
+/* line 109, ../sass/promo-int-services.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 125, ../sass/promo-int-services.scss */
+/* line 119, ../sass/promo-int-services.scss */
 main {
   background-color: white;
 }

@@ -8,25 +8,19 @@ $lg-handheld: 480px;
 $xs-screens: 768px;
 $sm-screens: 992px;
 $lg-screens: 1200px;
-$background-image-body: "../images/bg_1920.jpg";
+$image-path: "../images/";
+$background-image-default: "bg-1920.jpg";
 
 // Mixins
-@mixin bg($url: $background-image-body, $bg-clr: $body-bg) {
+@mixin bg($imgName: $background-image-default, $bg-clr: $body-bg) {
   background: {
 	color: $bg-clr;
-	image: url($url);
+	image: url(#{$image-path}#{$imgName});
 	repeat: no-repeat;
 	position: top center;
   }
 }
 
-@mixin sprite($x, $y) {
-  background: {
-	image: url($bg-sprite-img);
-	repeat: no-repeat;
-	position: $x $y;
-  }
-}
 
 @mixin border-radius($tl: 6px, $tr: 6px, $bl: 0, $br: 0) {
   border-radius: $tl $tr $bl $br;
@@ -63,8 +57,8 @@ $background-image-body: "../images/bg_1920.jpg";
 
 // Utilities
 
-.theme-default {
-  @include bg($background-image-body);
+.theme_default {
+  @include bg($background-image-default);
   @include background-size();
 }
 
