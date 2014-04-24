@@ -1,3 +1,4 @@
+@import "font";
 // Override Bootstrap variables here (defaults copied from bootstrap-sass version 3.1.1.0):
 // a flag to toggle asset pipeline / compass integration
 // defaults to true if twbs-font-path function is present (no function => twbs-font-path('') parsed as string == right side)
@@ -17,7 +18,11 @@
 //$gray-light:             lighten(#000, 60%);   // #999
 //$gray-lighter:           lighten(#000, 93.5%); // #eee
 
-//$brand-primary:         #428bca;
+$color-blue-dark: #003366;
+$color-blue-light: #00b9f2;
+$color-blue-lighter: #18bde6;
+
+$brand-primary:         $color-blue-light;
 //$brand-success:         #5cb85c;
 //$brand-info:            #5bc0de;
 //$brand-warning:         #f0ad4e;
@@ -41,8 +46,8 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-//$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-//$font-family-serif:       Georgia, "Times New Roman", Times, serif;
+// font
+$font-family-sans-serif:  "CSpire", Arial, sans-serif;
 //* Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 //$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 //$font-family-base:        $font-family-sans-serif;

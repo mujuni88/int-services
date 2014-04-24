@@ -8,19 +8,19 @@ $lg-handheld: 480px;
 $xs-screens: 768px;
 $sm-screens: 992px;
 $lg-screens: 1200px;
-$image-path: "../images/";
-$background-image-default: "bg-1920.jpg";
+$image-path:"../images/";
+$img-bg: "bg-1920.jpg";
+$container-width: 960px;
 
 // Mixins
-@mixin bg($imgName: $background-image-default, $bg-clr: $body-bg) {
+@mixin bg($img-name, $bg-clr: $body-bg) {
   background: {
 	color: $bg-clr;
-	image: url(#{$image-path}#{$imgName});
+	image: url(#{$image-path}#{$img-name});
 	repeat: no-repeat;
 	position: top center;
   }
 }
-
 
 @mixin border-radius($tl: 6px, $tr: 6px, $bl: 0, $br: 0) {
   border-radius: $tl $tr $bl $br;
@@ -56,9 +56,8 @@ $background-image-default: "bg-1920.jpg";
 }
 
 // Utilities
-
 .theme_default {
-  @include bg($background-image-default);
+  @include bg($img-bg);
   @include background-size();
 }
 
@@ -90,7 +89,7 @@ $background-image-default: "bg-1920.jpg";
 }
 
 .pd-btm-20{
-  padding-btm: 20px;
+  padding-bottom: 20px;
 }
 
 .mg-right-22{
@@ -106,20 +105,60 @@ $background-image-default: "bg-1920.jpg";
   border-radius: 10px;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00AEEF;
+  font-size: 12px;
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  &:hover {
+	color: #ffffff;
+	background-color: #0072C7;
+  }
+}
+
+// Layout
 .container-fluid {
   padding: 0;
 }
 
+.container{
+  max-width: $container-width;
+  margin-top: 40px;
+  height:1000px;
+  padding:0;
+  background-color: $body-bg;
+  @include border-radius()
+
+}
 // Headers
 header {
+}
 
+header, main{
+  padding: {
+	left: 40px;
+	right: 40px;
+  }
+}
+
+.nav-tabs-blue li a{
+  background-color: deepskyblue;
+  color:$body-bg;
+  @include border-radius(10px, 10px)
 }
 
 // Main
 main {
-  background-color: $body-bg;
+  background-color: darken($brand-primary, 30%);
+  padding-top:40px;
+
+  > nav{
+  }
 }
 
-
-
-// Nav

@@ -1,0 +1,5 @@
+@import "compass";
+
+$font-name:"CSpire";
+$font-path:"";
+@include font-face($font-name, font-files("#{$font-path}cspire_3_0-webfont.woff","#{$font-path}cspire_3_0-webfont.ttf","#{$font-path}cspire_3_0-webfont.svg#proximanovasoft-regularRg"),"#{$font-path}cspire_3_0-webfont.eot", "normal", "normal");
