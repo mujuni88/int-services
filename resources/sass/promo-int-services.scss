@@ -61,12 +61,14 @@ $container-width: 960px;
   @include background-size();
 }
 
-.pd-5{
-  padding:5px;
+.pd-5 {
+  padding: 5px;
 }
-.pd-10{
-  padding:10px;
+
+.pd-10 {
+  padding: 10px;
 }
+
 .pd-right-10 {
   padding-right: 10px;
 }
@@ -103,6 +105,10 @@ $container-width: 960px;
   margin-right: 22px;
 }
 
+.mg-btm-0 {
+  margin-bottom: 0;
+}
+
 .pull-up-20 {
   margin-top: -20px;
 }
@@ -110,23 +116,62 @@ $container-width: 960px;
 .brd-rd-10 {
   border-radius: 10px;
 }
-.brd-top{
-  border-top:1px solid $gray-lighter;
-}
-.brd-bottom{
-  border-bottom:1px solid $gray-lighter;
+
+.brd-top {
+  border-top: 1px solid $gray-lighter;
 }
 
+.brd-bottom {
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.color-blue-darker{
+  color:$color-blue-darker;
+}
 .h1, .color-blue {
   color: $color-blue-light;
 }
 
-.download{
+.download {
   @extend .pd-10;
   @extend .brd-bottom;
   @extend .brd-top;
 }
 
+.clr-red {
+  color: red;
+}
+
+.table-bordered-blue > thead > tr > th, .table-bordered-blue > thead > tr > td, .table-bordered-blue > tbody > tr > th, .table-bordered-blue > tbody > tr > td, .table-bordered-blue > tfoot > tr > th, .table-bordered-blue > tfoot > tr > td {
+  border: 2px solid $color-blue-dark;
+  padding:0;
+  vertical-align: middle;
+}
+
+.table-bordered-blue {
+  border-top: 2px solid $color-blue-dark;
+  p{
+	@extend .text-center;
+	margin:0;
+	padding:{
+	  top:5px;
+	  bottom:5px;
+	}
+  }
+
+  thead {
+	th {
+	  background-color: $color-blue-lightest;
+	}
+  }
+
+}
+
+.table {
+  td {
+
+  }
+}
 
 .back-to-top {
   position: fixed;
@@ -153,7 +198,6 @@ $container-width: 960px;
 .container {
   max-width: $container-width;
   margin-top: 40px;
-  height: 1000px;
   padding: 0;
   background-color: $body-bg;
   @include border-radius()
@@ -171,8 +215,6 @@ header, main, .tab-content {
   }
 }
 
-
-
 // Main
 main {
   background-color: $color-blue-darker;
@@ -181,15 +223,15 @@ main {
   // Nav
   nav {
 
-	.nav-tabs li.active{
+	.nav-tabs li.active {
 	  z-index: 1;
 	}
 	.nav-tabs li {
 	  margin-right: -8px;
 
 	  a {
-		border: 1px solid darken($color-blue-lighter, 10%);
-		border-bottom:0;
+		border: 1px solid $color-blue-darker;
+		border-bottom: 0;
 		background-color: $color-blue-lighter;
 		color: $body-bg;
 		z-index: 0;
@@ -197,13 +239,13 @@ main {
 
 		&:hover {
 		  color: $color-blue-darker;
-		  z-index: 1;
+		  z-index: 0;
 		}
 	  }
 	}
   }
 
-  .tab-content{
+  .tab-content {
 	background-color: $body-bg;
   }
 }

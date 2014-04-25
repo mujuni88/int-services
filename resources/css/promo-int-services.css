@@ -629,7 +629,7 @@ cite {
 }
 
 /* line 87, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-center {
+.text-center, .table-bordered-blue p {
   text-align: center;
 }
 
@@ -2118,12 +2118,12 @@ th {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #002146;
 }
 /* line 35, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #002146;
 }
 /* line 45, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table > caption + thead > tr:first-child > th,
@@ -2136,7 +2136,7 @@ th {
 }
 /* line 51, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table > tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #002146;
 }
 /* line 56, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table .table {
@@ -2155,7 +2155,7 @@ th {
 
 /* line 82, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #002146;
 }
 /* line 89, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table-bordered > thead > tr > th,
@@ -2164,7 +2164,7 @@ th {
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > th,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #002146;
 }
 /* line 96, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table-bordered > thead > tr > th,
@@ -2175,7 +2175,7 @@ th {
 /* line 110, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
+  background-color: #dceef4;
 }
 
 /* line 124, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
@@ -2307,7 +2307,7 @@ table th[class*="col-"] {
     overflow-y: hidden;
     overflow-x: scroll;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
+    border: 1px solid #002146;
     -webkit-overflow-scrolling: touch;
   }
   /* line 182, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_tables.scss */
@@ -4841,7 +4841,7 @@ input[type="button"].btn-block {
 
 /* line 76, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid transparent;
 }
 /* line 78, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li {
@@ -4857,13 +4857,13 @@ input[type="button"].btn-block {
 }
 /* line 89, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #dddddd;
+  border-color: white white transparent;
 }
 /* line 98, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #002146;
   background-color: white;
-  border: 1px solid #dddddd;
+  border: 1px solid #002146;
   border-bottom-color: transparent;
   cursor: default;
 }
@@ -4941,12 +4941,12 @@ input[type="button"].btn-block {
 .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs-justified > .active > a:focus,
 .nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #dddddd;
+  border: 1px solid #002146;
 }
 @media (min-width: 768px) {
   /* line 206, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
   .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #002146;
     border-radius: 4px 4px 0 0;
   }
   /* line 212, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_navs.scss */
@@ -6480,7 +6480,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 /* line 140, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
 .panel > .panel-body + .table,
 .panel > .panel-body + .table-responsive {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #002146;
 }
 /* line 144, ../../../../../../Library/Ruby/Gems/2.0.0/gems/bootstrap-sass-3.1.1.0/vendor/assets/stylesheets/bootstrap/_panels.scss */
 .panel > .table > tbody:first-child > tr:first-child th,
@@ -7619,82 +7619,119 @@ button.close {
   padding: 5px;
 }
 
-/* line 67, ../sass/promo-int-services.scss */
+/* line 68, ../sass/promo-int-services.scss */
 .pd-10, .download {
   padding: 10px;
 }
 
-/* line 70, ../sass/promo-int-services.scss */
+/* line 72, ../sass/promo-int-services.scss */
 .pd-right-10 {
   padding-right: 10px;
 }
 
-/* line 74, ../sass/promo-int-services.scss */
+/* line 76, ../sass/promo-int-services.scss */
 .pd-left-10 {
   padding-left: 10px;
 }
 
-/* line 78, ../sass/promo-int-services.scss */
+/* line 80, ../sass/promo-int-services.scss */
 .pd-top-10 {
   padding-top: 10px;
 }
 
-/* line 82, ../sass/promo-int-services.scss */
+/* line 84, ../sass/promo-int-services.scss */
 .pd-btm-10 {
   padding-bottom: 10px;
 }
 
-/* line 86, ../sass/promo-int-services.scss */
+/* line 88, ../sass/promo-int-services.scss */
 .pd-right-20 {
   padding-right: 20px;
 }
 
-/* line 90, ../sass/promo-int-services.scss */
+/* line 92, ../sass/promo-int-services.scss */
 .pd-left-20 {
   padding-left: 20px;
 }
 
-/* line 94, ../sass/promo-int-services.scss */
+/* line 96, ../sass/promo-int-services.scss */
 .pd-top-20 {
   padding-top: 20px;
 }
 
-/* line 98, ../sass/promo-int-services.scss */
+/* line 100, ../sass/promo-int-services.scss */
 .pd-btm-20 {
   padding-bottom: 20px;
 }
 
-/* line 102, ../sass/promo-int-services.scss */
+/* line 104, ../sass/promo-int-services.scss */
 .mg-right-22 {
   margin-right: 22px;
 }
 
-/* line 106, ../sass/promo-int-services.scss */
+/* line 108, ../sass/promo-int-services.scss */
+.mg-btm-0 {
+  margin-bottom: 0;
+}
+
+/* line 112, ../sass/promo-int-services.scss */
 .pull-up-20 {
   margin-top: -20px;
 }
 
-/* line 110, ../sass/promo-int-services.scss */
+/* line 116, ../sass/promo-int-services.scss */
 .brd-rd-10 {
   border-radius: 10px;
 }
 
-/* line 113, ../sass/promo-int-services.scss */
+/* line 120, ../sass/promo-int-services.scss */
 .brd-top, .download {
   border-top: 1px solid #eeeeee;
 }
 
-/* line 116, ../sass/promo-int-services.scss */
+/* line 124, ../sass/promo-int-services.scss */
 .brd-bottom, .download {
   border-bottom: 1px solid #eeeeee;
 }
 
-/* line 120, ../sass/promo-int-services.scss */
+/* line 128, ../sass/promo-int-services.scss */
+.color-blue-darker {
+  color: #002146;
+}
+
+/* line 131, ../sass/promo-int-services.scss */
 .h1, .color-blue {
   color: #00aeef;
 }
 
-/* line 131, ../sass/promo-int-services.scss */
+/* line 141, ../sass/promo-int-services.scss */
+.clr-red {
+  color: red;
+}
+
+/* line 145, ../sass/promo-int-services.scss */
+.table-bordered-blue > thead > tr > th, .table-bordered-blue > thead > tr > td, .table-bordered-blue > tbody > tr > th, .table-bordered-blue > tbody > tr > td, .table-bordered-blue > tfoot > tr > th, .table-bordered-blue > tfoot > tr > td {
+  border: 2px solid #0072c7;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/* line 151, ../sass/promo-int-services.scss */
+.table-bordered-blue {
+  border-top: 2px solid #0072c7;
+}
+/* line 153, ../sass/promo-int-services.scss */
+.table-bordered-blue p {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* line 163, ../sass/promo-int-services.scss */
+.table-bordered-blue thead th {
+  background-color: #dceef4;
+}
+
+/* line 176, ../sass/promo-int-services.scss */
 .back-to-top {
   position: fixed;
   bottom: 2em;
@@ -7707,61 +7744,60 @@ button.close {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-/* line 142, ../sass/promo-int-services.scss */
+/* line 187, ../sass/promo-int-services.scss */
 .back-to-top:hover {
   color: white;
   background-color: #0072c7;
 }
 
-/* line 149, ../sass/promo-int-services.scss */
+/* line 194, ../sass/promo-int-services.scss */
 .container-fluid {
   padding: 0;
 }
 
-/* line 153, ../sass/promo-int-services.scss */
+/* line 198, ../sass/promo-int-services.scss */
 .container {
   max-width: 960px;
   margin-top: 40px;
-  height: 1000px;
   padding: 0;
   background-color: white;
   border-radius: 6px 6px 0 0;
 }
 
-/* line 167, ../sass/promo-int-services.scss */
+/* line 211, ../sass/promo-int-services.scss */
 header, main, .tab-content {
   padding-left: 40px;
   padding-right: 10px;
 }
 
-/* line 177, ../sass/promo-int-services.scss */
+/* line 219, ../sass/promo-int-services.scss */
 main {
   background-color: #002146;
   padding-top: 40px;
 }
-/* line 184, ../sass/promo-int-services.scss */
+/* line 226, ../sass/promo-int-services.scss */
 main nav .nav-tabs li.active {
   z-index: 1;
 }
-/* line 187, ../sass/promo-int-services.scss */
+/* line 229, ../sass/promo-int-services.scss */
 main nav .nav-tabs li {
   margin-right: -8px;
 }
-/* line 190, ../sass/promo-int-services.scss */
+/* line 232, ../sass/promo-int-services.scss */
 main nav .nav-tabs li a {
-  border: 1px solid #00bbf4;
+  border: 1px solid #002146;
   border-bottom: 0;
   background-color: #28cdff;
   color: white;
   z-index: 0;
   border-radius: 10px 10px 0 0;
 }
-/* line 198, ../sass/promo-int-services.scss */
+/* line 240, ../sass/promo-int-services.scss */
 main nav .nav-tabs li a:hover {
   color: #002146;
-  z-index: 1;
+  z-index: 0;
 }
-/* line 206, ../sass/promo-int-services.scss */
+/* line 248, ../sass/promo-int-services.scss */
 main .tab-content {
   background-color: white;
 }

@@ -20,8 +20,9 @@
 
 $color-blue-dark: #0072C7;
 $color-blue-darker: #002146;
-$color-blue-lighter: #28CDFF;
 $color-blue-light: #00AEEF;
+$color-blue-lighter: #28CDFF;
+$color-blue-lightest: lighten(#ADD8E6, 12%);
 
 $btn-primary-bg-color: $color-blue-darker;
 $btn-primary-bg-color-hover:$color-blue-dark;
@@ -134,13 +135,13 @@ $component-active-bg:       $body-bg;
 //* Default background color used for all tables.
 //$table-bg:                      transparent;
 //* Background color used for `.table-striped`.
-//$table-bg-accent:               #f9f9f9;
+$table-bg-accent:               $color-blue-lightest;
 //* Background color used for `.table-hover`.
 //$table-bg-hover:                #f5f5f5;
 //$table-bg-active:               $table-bg-hover;
 
 //* Border color for table and cell borders.
-//$table-border-color:            #ddd;
+$table-border-color:            $color-blue-darker;
 
 //== Buttons
 //
@@ -399,15 +400,15 @@ $nav-disabled-link-hover-color:             $color-blue-darker;
 $nav-open-link-hover-color:                 $color-blue-darker;
 
 //== Tabs
-//$nav-tabs-border-color:                     #ddd;
+$nav-tabs-border-color:                     transparent;
 
-//$nav-tabs-link-hover-border-color:          $gray-lighter;
+$nav-tabs-link-hover-border-color:          $body-bg;
 
 //$nav-tabs-active-link-hover-bg:             $body-bg;
 $nav-tabs-active-link-hover-color:          $color-blue-darker;
-//$nav-tabs-active-link-hover-border-color:   #ddd;
+$nav-tabs-active-link-hover-border-color:   $color-blue-darker;
 
-//$nav-tabs-justified-link-border-color:            #ddd;
+$nav-tabs-justified-link-border-color:            $color-blue-darker;
 //$nav-tabs-justified-active-link-border-color:     $body-bg;
 
 //== Pills
