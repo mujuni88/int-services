@@ -9,9 +9,7 @@ app = (function($){
 
         $('.nav-tabs a').click(function (e) {
             $(this).tab('show');
-            var scrollmem = $('body').scrollTop();
             window.location.hash = this.hash;
-            $('html,body').scrollTop(scrollmem);
         });
     }
 
@@ -19,6 +17,28 @@ app = (function($){
         $tab.click(function(e){
             e.preventDefault();
             $(this).tab('show');
+        });
+    }
+
+    function faqsEvents() {
+        var minus = "/resources/images/promos/new_plan/minus.png",
+            plus = "/resources/images/promos/new_plan/plus.png",
+            clicked = "clicked",
+            $ans, $this;
+        $faqs.click(function(e) {
+            $ans = $(this).find(".ans");
+            $this = $(this).find("img");
+            if ($this.hasClass(clicked)) {
+                $this.attr({
+                    src: plus
+                }).removeClass(clicked);
+                $ans.hide();
+            } else {
+                $this.attr({
+                    src: minus
+                }).addClass(clicked);
+                $ans.show();
+            }
         });
     }
 

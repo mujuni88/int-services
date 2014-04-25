@@ -28,7 +28,9 @@
     <![endif]-->
     <script src="resources/js/jquery.1.11.0.min.js"></script>
     <script>var jQuery_1_11_0 = $.noConflict(true);</script>
+    <script src="resources/js/bootstrap-transition.js"></script>
     <script src="resources/js/bootstrap-tab.js"></script>
+    <script src="resources/js/bootstrap-collapse.js"></script>
     <script src="resources/js/angular.min.js"></script>
     <script src="resources/js/angular-sanatize.min.js"></script>
     <script src="resources/js/angular-route.min.js"></script>
@@ -38,7 +40,7 @@
     <div class="container-fluid theme_default">
       <div class="container">
         <header>
-          <p class="h1">International Services</p>
+          <h1>International Services</h1>
         </header>
         <main>
           <nav>
@@ -53,14 +55,657 @@
         -->
         <div class="tab-content">
           <div id="travel" class="tab-pane active">
-            <h2 class="color-blue">Travel</h2>
-            <p>
-              Refer to this information before using your phone outside of the U.S only Certain devices
-              
-            </p>
+            <div class="row">
+              <div class="col-sm-8">
+                <h2 class="color-blue">Travel</h2>
+                <p>Refer to this information before using your phone outside of the U.S only Certain devices work outside of this area.</p>
+                <p><strong>Where are you going?</strong></p>
+                <select class="form-control">
+                  <option value="0">-- Select --</option>
+                  <option value="Abchazia (Georgia)">Abchazia (Georgia)</option>
+                  <option value="Abu Dhabi (United Arab Emirates)">Abu Dhabi (United Arab Emirates)</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Aland Islands (Finland)">Aland Islands (Finland)</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Alderney (Guernsey)">Alderney (Guernsey)</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="American Samoa">American Samoa</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Anguilla">Anguilla</option>
+                  <option value="Antarctica">Antarctica</option>
+                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Aruba">Aruba</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Azores (Portugal)">Azores (Portugal)</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bermuda">Bermuda</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bonaire (Dutch Antilles)">Bonaire (Dutch Antilles)</option>
+                  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Brunei Darussalam">Brunei Darussalam</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Canary Islands (Spain)">Canary Islands (Spain)</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Cayman Islands">Cayman Islands</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Ceuta (Spain)">Ceuta (Spain)</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Christmas Island">Christmas Island</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo, (Brazzaville)">Congo, (Brazzaville)</option>
+                  <option value="Congo, (Dem.Rep., Kinshasa)">Congo, (Dem.Rep., Kinshasa)</option>
+                  <option value="Cook Islands">Cook Islands</option>
+                  <option value="Corsica (France)">Corsica (France)</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Croatia (Local Name: Hrvatska)">Croatia (Local Name: Hrvatska)</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Curacao (Dutch Antilles)">Curacao (Dutch Antilles)</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Desirade (French Antilles)">Desirade (French Antilles)</option>
+                  <option value="Djibouti">Djibouti</option>
+                  <option value="Dominica">Dominica</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="Dubai (United Arab Emirates)">Dubai (United Arab Emirates)</option>
+                  <option value="East Timor">East Timor</option>
+                  <option value="Easter Island">Easter Island</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                  <option value="Faroe Islands">Faroe Islands</option>
+                  <option value="Fiji">Fiji</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="French Guiana">French Guiana</option>
+                  <option value="French Polynesia">French Polynesia</option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Galapagos Islands">Galapagos Islands</option>
+                  <option value="Gambia">Gambia</option>
+                  <option value="Gaza strip">Gaza strip</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Gibraltar">Gibraltar</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Greenland">Greenland</option>
+                  <option value="Grenada">Grenada</option>
+                  <option value="Guadeloupe">Guadeloupe</option>
+                  <option value="Guam">Guam</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Guernsey">Guernsey</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guinea-Bissau">Guinea-Bissau</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Herm (Guernsey)">Herm (Guernsey)</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hong Kong">Hong Kong</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Ibiza (Spain)">Ibiza (Spain)</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="India">India</option>
+                  <option value="India (Andra Pradesh)">India (Andra Pradesh)</option>
+                  <option value="India (Bihar)">India (Bihar)</option>
+                  <option value="India (Bombay/Mumbai)">India (Bombay/Mumbai)</option>
+                  <option value="India (Calcutta/Kolkata)">India (Calcutta/Kolkata)</option>
+                  <option value="India (Dehli)">India (Dehli)</option>
+                  <option value="India (Goa)">India (Goa)</option>
+                  <option value="India (Gujarat)">India (Gujarat)</option>
+                  <option value="India (Haryana)">India (Haryana)</option>
+                  <option value="India (Himachal Pradesh)">India (Himachal Pradesh)</option>
+                  <option value="India (Karnataka)">India (Karnataka)</option>
+                  <option value="India (Kerala)">India (Kerala)</option>
+                  <option value="India (Madhya Pradesh)">India (Madhya Pradesh)</option>
+                  <option value="India (Madras/Chennai)">India (Madras/Chennai)</option>
+                  <option value="India (Maharashtra)">India (Maharashtra)</option>
+                  <option value="India (Orissa)">India (Orissa)</option>
+                  <option value="India (Punjab)">India (Punjab)</option>
+                  <option value="India (Rajasthan)">India (Rajasthan)</option>
+                  <option value="India (Tamil Nadu)">India (Tamil Nadu)</option>
+                  <option value="India (Uttar Pradesh East)">India (Uttar Pradesh East)</option>
+                  <option value="India (Uttar Pradesh West)">India (Uttar Pradesh West)</option>
+                  <option value="India (West Bengal)">India (West Bengal)</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Iran (Islamic Republic of)">Iran (Islamic Republic of)</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Isle Of Man">Isle Of Man</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Ivory Coast">Ivory Coast</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jersey">Jersey</option>
+                  <option value="Jordan">Jordan</option>
+                  <option value="Kazakhstan">Kazakhstan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Korea, Republic Of">Korea, Republic Of</option>
+                  <option value="Kosovo">Kosovo</option>
+                  <option value="Kreta (Greece)">Kreta (Greece)</option>
+                  <option value="Kuwait">Kuwait</option>
+                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Lesotho">Lesotho</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Macau">Macau</option>
+                  <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Madeira (Portugal)">Madeira (Portugal)</option>
+                  <option value="Malawi">Malawi</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Mallorca (Spain)">Mallorca (Spain)</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Marie-Galante (French Antilles)">Marie-Galante (French Antilles)</option>
+                  <option value="Martinique">Martinique</option>
+                  <option value="Mauritania">Mauritania</option>
+                  <option value="Mauritius">Mauritius</option>
+                  <option value="Mayotte">Mayotte</option>
+                  <option value="Melilla (Spain)">Melilla (Spain)</option>
+                  <option value="Menorca (Spain)">Menorca (Spain)</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Moldova, Republic of">Moldova, Republic of</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montenegro">Montenegro</option>
+                  <option value="Montserrat">Montserrat</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Nauru">Nauru</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Netherlands Antilles">Netherlands Antilles</option>
+                  <option value="New Caledonia">New Caledonia</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Norfolk Island">Norfolk Island</option>
+                  <option value="Northern Cyprus">Northern Cyprus</option>
+                  <option value="Northern Ireland (United Kingdom)">Northern Ireland (United Kingdom)</option>
+                  <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Palau">Palau</option>
+                  <option value="Palestinian Territory, occupied">Palestinian Territory, occupied</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Papua New Guinea">Papua New Guinea</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Puerto Rico">Puerto Rico</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Reunion">Reunion</option>
+                  <option value="Rhodos (Greece)">Rhodos (Greece)</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russian Federation">Russian Federation</option>
+                  <option value="Russian Federation (Adygeya Republic)">Russian Federation (Adygeya Republic)</option>
+                  <option value="Russian Federation (Altai Krai)">Russian Federation (Altai Krai)</option>
+                  <option value="Russian Federation (Altai Republic)">Russian Federation (Altai Republic)</option>
+                  <option value="Russian Federation (Amur Oblast)">Russian Federation (Amur Oblast)</option>
+                  <option value="Russian Federation (Arkhangelsk Oblast)">Russian Federation (Arkhangelsk Oblast)</option>
+                  <option value="Russian Federation (Astrakhan Oblast)">Russian Federation (Astrakhan Oblast)</option>
+                  <option value="Russian Federation (Bashkortostan Republic)">Russian Federation (Bashkortostan Republic)</option>
+                  <option value="Russian Federation (Belgorod Oblast)">Russian Federation (Belgorod Oblast)</option>
+                  <option value="Russian Federation (Bryansk Oblast)">Russian Federation (Bryansk Oblast)</option>
+                  <option value="Russian Federation (Buryatia Republic)">Russian Federation (Buryatia Republic)</option>
+                  <option value="Russian Federation (Chechnya Republic)">Russian Federation (Chechnya Republic)</option>
+                  <option value="Russian Federation (Chelyabinsk Oblast)">Russian Federation (Chelyabinsk Oblast)</option>
+                  <option value="Russian Federation (Chita Oblast)">Russian Federation (Chita Oblast)</option>
+                  <option value="Russian Federation (Chuvashia Republic)">Russian Federation (Chuvashia Republic)</option>
+                  <option value="Russian Federation (Dagestan Republic)">Russian Federation (Dagestan Republic)</option>
+                  <option value="Russian Federation (Evenks Autonomous)">Russian Federation (Evenks Autonomous)</option>
+                  <option value="Russian Federation (Ingushetia Republic)">Russian Federation (Ingushetia Republic)</option>
+                  <option value="Russian Federation (Irkutsk Oblast)">Russian Federation (Irkutsk Oblast)</option>
+                  <option value="Russian Federation (Ivanovo Oblast)">Russian Federation (Ivanovo Oblast)</option>
+                  <option value="Russian Federation (Jewish Autonomous)">Russian Federation (Jewish Autonomous)</option>
+                  <option value="Russian Federation (Kabardino-Balkaria Republic)">Russian Federation (Kabardino-Balkaria Republic)</option>
+                  <option value="Russian Federation (Kaliningrad Oblast)">Russian Federation (Kaliningrad Oblast)</option>
+                  <option value="Russian Federation (Kalmykia Republic)">Russian Federation (Kalmykia Republic)</option>
+                  <option value="Russian Federation (Kaluga Oblast)">Russian Federation (Kaluga Oblast)</option>
+                  <option value="Russian Federation (Kamchatka Oblast)">Russian Federation (Kamchatka Oblast)</option>
+                  <option value="Russian Federation (Karachaevo-Cherkessia Republic)">Russian Federation (Karachaevo-Cherkessia Republic)</option>
+                  <option value="Russian Federation (Karelia Republic)">Russian Federation (Karelia Republic)</option>
+                  <option value="Russian Federation (Kemerovo Oblast)">Russian Federation (Kemerovo Oblast)</option>
+                  <option value="Russian Federation (Khabarovsk Krai)">Russian Federation (Khabarovsk Krai)</option>
+                  <option value="Russian Federation (Khakassia Republic)">Russian Federation (Khakassia Republic)</option>
+                  <option value="Russian Federation (Khanty-Mansiysk Autonomous)">Russian Federation (Khanty-Mansiysk Autonomous)</option>
+                  <option value="Russian Federation (Kirov Oblast)">Russian Federation (Kirov Oblast)</option>
+                  <option value="Russian Federation (Komi Republic)">Russian Federation (Komi Republic)</option>
+                  <option value="Russian Federation (Komi-Permyaks Autonomous)">Russian Federation (Komi-Permyaks Autonomous)</option>
+                  <option value="Russian Federation (Kostroma Oblast)">Russian Federation (Kostroma Oblast)</option>
+                  <option value="Russian Federation (Krasnodar Krai)">Russian Federation (Krasnodar Krai)</option>
+                  <option value="Russian Federation (Kurgan Oblast)">Russian Federation (Kurgan Oblast)</option>
+                  <option value="Russian Federation (Kursk Oblast)">Russian Federation (Kursk Oblast)</option>
+                  <option value="Russian Federation (Leningrad Oblast)">Russian Federation (Leningrad Oblast)</option>
+                  <option value="Russian Federation (Lipetsk Oblast)">Russian Federation (Lipetsk Oblast)</option>
+                  <option value="Russian Federation (Magadan Oblast)">Russian Federation (Magadan Oblast)</option>
+                  <option value="Russian Federation (Mari El Republic)">Russian Federation (Mari El Republic)</option>
+                  <option value="Russian Federation (Mordovia Republic)">Russian Federation (Mordovia Republic)</option>
+                  <option value="Russian Federation (Moscow Oblast)">Russian Federation (Moscow Oblast)</option>
+                  <option value="Russian Federation (Moscow)">Russian Federation (Moscow)</option>
+                  <option value="Russian Federation (Murmansk Oblast)">Russian Federation (Murmansk Oblast)</option>
+                  <option value="Russian Federation (Nenetses Autonomous)">Russian Federation (Nenetses Autonomous)</option>
+                  <option value="Russian Federation (Nizhny Novgorod Oblast)">Russian Federation (Nizhny Novgorod Oblast)</option>
+                  <option value="Russian Federation (Northern Ossetia - Alaniya Republic)">Russian Federation (Northern Ossetia - Alaniya Republic)</option>
+                  <option value="Russian Federation (Novgorod Oblast)">Russian Federation (Novgorod Oblast)</option>
+                  <option value="Russian Federation (Novosibirsk Oblast)">Russian Federation (Novosibirsk Oblast)</option>
+                  <option value="Russian Federation (Omsk Oblast)">Russian Federation (Omsk Oblast)</option>
+                  <option value="Russian Federation (Orel Oblast)">Russian Federation (Orel Oblast)</option>
+                  <option value="Russian Federation (Orenburg Oblast)">Russian Federation (Orenburg Oblast)</option>
+                  <option value="Russian Federation (Penza Oblast)">Russian Federation (Penza Oblast)</option>
+                  <option value="Russian Federation (Perm Oblast)">Russian Federation (Perm Oblast)</option>
+                  <option value="Russian Federation (Primorsk Krai)">Russian Federation (Primorsk Krai)</option>
+                  <option value="Russian Federation (Pskov Oblast)">Russian Federation (Pskov Oblast)</option>
+                  <option value="Russian Federation (Rostov Oblast)">Russian Federation (Rostov Oblast)</option>
+                  <option value="Russian Federation (Ryazan Oblast)">Russian Federation (Ryazan Oblast)</option>
+                  <option value="Russian Federation (Sakha-Yahutiya Republic)">Russian Federation (Sakha-Yahutiya Republic)</option>
+                  <option value="Russian Federation (Sakhalin Oblast)">Russian Federation (Sakhalin Oblast)</option>
+                  <option value="Russian Federation (Samara Oblast)">Russian Federation (Samara Oblast)</option>
+                  <option value="Russian Federation (Saratov Oblast)">Russian Federation (Saratov Oblast)</option>
+                  <option value="Russian Federation (Smolensk Oblast)">Russian Federation (Smolensk Oblast)</option>
+                  <option value="Russian Federation (St. Petersburg)">Russian Federation (St. Petersburg)</option>
+                  <option value="Russian Federation (Stavropol Krai)">Russian Federation (Stavropol Krai)</option>
+                  <option value="Russian Federation (Sverdlovsk Oblast)">Russian Federation (Sverdlovsk Oblast)</option>
+                  <option value="Russian Federation (Taimyr Autonomous)">Russian Federation (Taimyr Autonomous)</option>
+                  <option value="Russian Federation (Tambov Oblast)">Russian Federation (Tambov Oblast)</option>
+                  <option value="Russian Federation (Tatarstan Republic)">Russian Federation (Tatarstan Republic)</option>
+                  <option value="Russian Federation (Tomsk Oblast)">Russian Federation (Tomsk Oblast)</option>
+                  <option value="Russian Federation (Tula Oblast)">Russian Federation (Tula Oblast)</option>
+                  <option value="Russian Federation (Tver Oblast)">Russian Federation (Tver Oblast)</option>
+                  <option value="Russian Federation (Tyumen Oblast)">Russian Federation (Tyumen Oblast)</option>
+                  <option value="Russian Federation (Tyva Republic)">Russian Federation (Tyva Republic)</option>
+                  <option value="Russian Federation (Udmurtia Republic)">Russian Federation (Udmurtia Republic)</option>
+                  <option value="Russian Federation (Ulan-Ude)">Russian Federation (Ulan-Ude)</option>
+                  <option value="Russian Federation (Ulyanovsk Oblast)">Russian Federation (Ulyanovsk Oblast)</option>
+                  <option value="Russian Federation (Vladimir Oblast)">Russian Federation (Vladimir Oblast)</option>
+                  <option value="Russian Federation (Vladivostok)">Russian Federation (Vladivostok)</option>
+                  <option value="Russian Federation (Volgograd Oblast)">Russian Federation (Volgograd Oblast)</option>
+                  <option value="Russian Federation (Vologda Oblast)">Russian Federation (Vologda Oblast)</option>
+                  <option value="Russian Federation (Voronezh Oblast)">Russian Federation (Voronezh Oblast)</option>
+                  <option value="Russian Federation (Yamal Nenetses Autonomous)">Russian Federation (Yamal Nenetses Autonomous)</option>
+                  <option value="Russian Federation (Yaroslavl Oblast)">Russian Federation (Yaroslavl Oblast)</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Saba (Dutch Antilles)">Saba (Dutch Antilles)</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Sao Tome And Principe">Sao Tome And Principe</option>
+                  <option value="Sardinia (Italy)">Sardinia (Italy)</option>
+                  <option value="Sark (Guernsey)">Sark (Guernsey)</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Scotland (United Kingdom)">Scotland (United Kingdom)</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Serbia">Serbia</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sharjah (United Arab Emirates)">Sharjah (United Arab Emirates)</option>
+                  <option value="Sicilia (Italy)">Sicilia (Italy)</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="St Barth">St Barth</option>
+                  <option value="St Eustatius (Dutch Antilles)">St Eustatius (Dutch Antilles)</option>
+                  <option value="St Helena">St Helena</option>
+                  <option value="St Kitts And Nevis">St Kitts And Nevis</option>
+                  <option value="St Lucia">St Lucia</option>
+                  <option value="St Maarten (Dutch Antilles)">St Maarten (Dutch Antilles)</option>
+                  <option value="St Martin">St Martin</option>
+                  <option value="St Vincent And The Grenadines">St Vincent And The Grenadines</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Svalbard and Jan Mayen Islands">Svalbard and Jan Mayen Islands</option>
+                  <option value="Swaziland">Swaziland</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                  <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                  <option value="Tajikistan">Tajikistan</option>
+                  <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="The Saints (French Antilles)">The Saints (French Antilles)</option>
+                  <option value="Tibet (China)">Tibet (China)</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Vatican City State (Holy See)">Vatican City State (Holy See)</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Viet Nam">Viet Nam</option>
+                  <option value="Virgin Islands (British)">Virgin Islands (British)</option>
+                  <option value="Virgin Islands (U.S.)">Virgin Islands (U.S.)</option>
+                  <option value="Wales (United Kingdom)">Wales (United Kingdom)</option>
+                  <option value="West Bank">West Bank</option>
+                  <option value="Western Sahara">Western Sahara</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zanzibar">Zanzibar</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                </select>
+                <p><em>To find a location, start typing or click the arrow to scroll.</em></p>
+              </div>
+              <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <p>International Dialing Instructions</p>
+                <p>Outside of the United States</p>
+                <ul>
+                  <li>
+                    <p><strong>Calling a U.S. number:</strong>Dial the plus key (+), the U.S. country code (1) and the 10-digit number</p>
+                  </li>
+                  <li>
+                    <p><strong>Texting a U.S. number:</strong>Enter the US country code (1) and the 10-digit number of the recipient</p>
+                  </li>
+                  <li>
+                    <p><strong>Calling between countries:</strong>Dial the plus key (+), the destination country code and the phone number</p>
+                  </li>
+                </ul>
+                <p>Press and hold the zero key (0) to dial the plus key (+).</p>
+                <p><span id="spl_assistance">
+                    For Assistance Abroad
+                    - Dial +1-601-487-7985 for C Spire Customer Care.</span></p><small>The international roaming rates provided by area are updated periodically and are subject to change without notice. While travelling outside of the United States, calls to toll-free numbers incur charges and/or use airtime depending on your location and calling plan. Roaming is not available in the Gulf of Mexico. Charges for usage while travelling internationally may appear on your bill up to 60 days after the charges were incurred. The account holder is responsible for all fees associated with the International Roaming feature and all charges for usage incurred while travelling internationally.</small>
+              </div>
+              <div class="col-sm-4">
+                <div><strong>Contact Customer Care</strong>
+                  <p>There are several ways to contact us:</p>
+                  <ul>
+                    <li><a href="mailto:askus@cspire.com">Email</a></li>
+                    <li>
+                      <p>Call toll-free &#32;<strong>1-855-CSPIRE5 <br></strong>(277-4735) from any phone</p>
+                    </li>
+                    <li>
+                      <p>Call &#32;<strong>611 &#32;</strong>from your C Spire phone</p>
+                    </li>
+                    <li>
+                      <p>Text a message to &#32;<strong>611 &#32;</strong>or use the &#32;<strong>Text<br> CS &#32;</strong>icon on your smartphone</p>
+                    </li>
+                  </ul>
+                </div><br>
+                <div class="download"><a href="http://circle.cspire.com/docs/DOC-1512" target="_blank">Download/print information</a></div><br>
+                <div id="accordion"><strong>Support</strong>
+                  <ul>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span>Requesting International Access</span></a>
+                      <div id="collapseOne" class="collapse">
+                        <p>To use your phone outside of the continental United States,
+                          <u>you must first request access by contacting Customer Care</u>. It is important to contact Customer Care before you travel to ensure that your wireless number is authorized for use outside of the U.S. (Access is also required for travel to Puerto Rico, the Bahamas, the U.S. Virgin Islands and Canada.)<br><br>To use a world-capable phone internationally, you will need to add the International Roaming Feature ($20 activation / $5 monthly fee) and purchase an international SIM card.
+                        </p>
+                      </div>
+                    </li>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span>International Roaming Feature</span></a>
+                      <div id="collapseTwo" class="collapse">
+                        <p>Before you can use a C Spire world-capable phone internationally, the International Roaming feature must be added to your account. There is a $20 activation fee and a $5 monthly fee.<br><br>The International Roaming feature can be cancelled at any time but the activation fee applies each time the feature is added to your account.</p>
+                      </div>
+                    </li>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span>International SIM Card</span></a>
+                      <div id="collapseThree" class="collapse">
+                        <p>World-capable phones require a SIM card to roam internationally. SIM cards can be<a href="http://www.cspire.com/shop_and_learn/accessories/category_accessories_list.jsp?_DARGS=/global/nav/accessory-categories.jsp.5_AF&amp;_dynSessConf=-8492325173092942886&amp;_D%3A/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.showAllTypes=+&amp;/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.showAllTypes=false&amp;/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.accessoryTypes=SIM+Cards&amp;_D%3A/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.accessoryTypes=+&amp;id=cat550004">purchased online</a>,
+                          by calling 1-855-CSPIRE4 (277-4734) or in a<a href="http://www.cspire.com/coverage/index.jsp#/stores">retail location</a>.<br><br>Proper<a href="http://circle.cspire.com/docs/DOC-1145">installation and activation of a SIM card</a>is crucial to being able to use your phone internationally.
+                        </p>
+                      </div>
+                    </li>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span>International Loaner Phone Program</span></a>
+                      <div id="collapseFour" class="collapse">
+                        <div>
+                          <p>If you don’t have a world-capable phone, we can provide you with one for use outside of the continental United States for up to one month.<br><br>The following criteria must be met in order to participate in the International Loaner Phone program:<br></p>
+                          <ul id="faqs">
+                            <li>You must be a postpaid customer in good standing for at least one year.</li>
+                            <li>The loaner phone must be requested by the account holder.</li>
+                            <li>You must purchase a SIM card to use in the loaner phone.</li>
+                            <li>All lines associated with the account holder’s Social Security number must be current. Past-due balances must be paid before being able to participate.</li>
+                            <li>You must complete the International Loaner Phone agreement.<a href="http://circle.cspire.com/docs/DOC-1146">View a sample of the agreement.</a></li>
+                          </ul>
+                          <p>Please visit a &nbsp;<a href="http://www.cspire.com/coverage/index.jsp#/stores">retail location</a>to request an international loaner phone or for more information.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span>Checking Voice Mail</span></a>
+                      <div id="collapseFive" class="collapse">
+                        <p>While in an international location, dial the plus key (+), the US country code (1) and your 10-digit wireless number.<br><br>Press the star key (*) as soon as you hear your outgoing message. Roaming charges (if applicable) apply when checking your voice mail while outside of the US.<br><br>Press and hold the zero key (0) to dial the plus key (+).</p>
+                      </div>
+                    </li>
+                    <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><span>Data Usage</span></a>
+                      <div id="collapseSix" class="collapse">
+                        <p>Data usage (where available) is billed at $5 per megabyte (MB).<br><br>How big is a megabyte?</p>
+                        <ul id="faqs">
+                          <li>One typically sized photo</li>
+                          <li>One minute of near CD-quality MP3 compressed music</li>
+                          <li>Approximately 100 pages of single-spaced 12-point text in MS Word</li>
+                          <li>67 email messages at 15KB each</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="calling" class="tab-pane"></div>
-          <div id="texting" class="tab-pane"></div>
+          <div id="calling" class="tab-pane">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2>Calling</h2><br>
+                <p>Calls made to locations outside of the United States, Puerto Rico or the U.S. Virgin Islands are considered international calls. These calls are subject to an international per-minute long distance rate and also use airtime.</p><br>
+                <p>Calls to Canada or any area that is part of the North American Number Plan (with 10-digit dialing) can be dialed directly and placed without requesting access. Calls to Canada incur international charges. (See chart below.)</p><br>
+                <p>International calls to all other locations are blocked until you specifically request access. We do not provide the ability to make an international call initially (with the exception of Canada) because making an international call isn't like calling across the country. We want to make sure you're aware of all the charges before you call.</p><br>
+                <p><strong>Calls placed to an international location</strong></p>
+                <p>
+                  If you're calling a location outside of the United States, Puerto Rico or the U.S. Virgin Islands, you'll be charged international long distance rates. Just like with any other call from your phone, you'll also use airtime minutes, if applicable.
+                  
+                </p>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <th>	Calls To</th>
+                      <th>	International <br> Long Distance</th>
+                    </thead>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>North America (includes Canada and non-U.S. Caribbean)</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>Central America and Mexico</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>South America</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>Europe</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>Middle East</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>Australia</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>Asia</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-6">
+                        <p>Africa</p>
+                      </td>
+                      <td class="col-sm-6">
+                        <p>50&cent;/min.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div><strong>Contact Customer Care</strong>
+                  <p>There are several ways to contact us:</p>
+                  <ul>
+                    <li><a href="mailto:askus@cspire.com">Email</a></li>
+                    <li>
+                      <p>Call toll-free &#32;<strong>1-855-CSPIRE5 <br></strong>(277-4735) from any phone</p>
+                    </li>
+                    <li>
+                      <p>Call &#32;<strong>611 &#32;</strong>from your C Spire phone</p>
+                    </li>
+                    <li>
+                      <p>Text a message to &#32;<strong>611 &#32;</strong>or use the &#32;<strong>Text<br> CS &#32;</strong>icon on your smartphone</p>
+                    </li>
+                  </ul>
+                </div><br>
+                <div class="download"><a href="http://circle.cspire.com/docs/DOC-1512" target="_blank">Download/print information</a></div>
+              </div>
+            </div>
+          </div>
+          <div id="texting" class="tab-pane">
+            <div class="row">
+              <div class="col-sm-8">
+                <h2><span class="color-blue">Free Unlimited <br>International Texting</span>&#32;to 143 <br> countries included in all plans.</h2><br><br>
+                <p>Countries with free international text messaging</p>
+              </div>
+              <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="table-responsive">
+                  <table class="table table-striped table-bordered">
+                    <tr>
+                      <td class="col-sm-1">A</td>
+                      <td class="col-sm-11">Abkhazia, Albania, American Samoa, Angola, Anguilla, Antigua & Barbuda, Argentina, Armenia, Aruba, Australia.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">B</td>
+                      <td class="col-sm-11">Bahamas, Bahrain, Bangladesh, Barbados, Belgium, Belize, Benin, Bermuda, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, Burundi.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">C, D</td>
+                      <td class="col-sm-11">Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, Colombia, Congo, Costa Rica, Cyprus, Dominica, Dominican Republic.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">E,F,G,H</td>
+                      <td class="col-sm-11">Ecuador, Egypt, El Salvador, Equatorial Guinea, Estonia, Fiji, France, French Guiana, Gabon, Gambia, Germany, Ghana, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hong Kong, Hungary.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">I,J,K,L</td>
+                      <td class="col-sm-11">Iceland, Indonesia, Iran, Ireland, Israel, Italy, Ivory Coast, Jamaica, Japan, Jordan, Latvia, Lebanon, Liberia, Libya, Liechtenstein, Luxembourg.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">M,N,O,P</td>
+                      <td class="col-sm-11">Madagascar, Martinique, Mauritania, Mexico, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Netherlands, Netherlands Antilles, Nicaragua, Niger, Nigeria, Norway, Oman, Panama, Papua New Guinea, Paraguay, Peru, Poland, Portugal, Puerto Rico.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">Q,R,S</td>
+                      <td class="col-sm-11">Qatar, Reunion, Romania, Russian, Rwanda, Saint Barthelemy, Saint Kitts & Nevis, Saint Lucia, Saint Martin, Saint Vincent & the Grenadines, Samoa, Senegal, Slovenia, Somalia, South Africa, South Sudan, Spain, Sudan, Suriname, Swaziland, Sweden, Switzerland.</td>
+                    </tr>
+                    <tr>
+                      <td class="col-sm-1">T - Z</td>
+                      <td class="col-sm-11">Tajikistan, Tanzania, Thailand, Togo, Trinidad & Tobago, Turkey, Turkmenistan, Turks & Calcos Islands, Uganda, Ukraine, United Kingdom, Uruguay, US Virgin Islands, Uzbekistan, Vanuatu, Venezuela, Vietnam, Yemen, Zambia.</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <div>
+                  <p class="h5">Contact Customer Care</p>
+                  <p>There are several ways to contact us:</p>
+                  <ul>
+                    <li><a href="mailto:askus@cspire.com">Email</a></li>
+                    <li>
+                      <p>Call toll-free &#32;<strong>1-855-CSPIRE5 <br></strong>(277-4735) from any phone</p>
+                    </li>
+                    <li>
+                      <p>Call &#32;<strong>611 &#32;</strong>from your C Spire phone</p>
+                    </li>
+                    <li>
+                      <p>Text a message to &#32;<strong>611 &#32;</strong>or use the &#32;<strong>Text<br> CS &#32;</strong>icon on your smartphone</p>
+                    </li>
+                  </ul>
+                </div><br>
+                <div class="download"><a href="http://circle.cspire.com/docs/DOC-1512" target="_blank">Download/print information</a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

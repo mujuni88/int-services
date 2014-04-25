@@ -1,16 +1,16 @@
-/* line 4, ../sass/promo-int-services-ie.scss */
-nav .nav-tabs li.active {
+/* line 5, ../sass/promo-int-services-ie.scss */
+main nav .nav-tabs li.active {
   z-index: 0;
 }
-/* line 7, ../sass/promo-int-services-ie.scss */
-nav .nav-tabs li {
+/* line 8, ../sass/promo-int-services-ie.scss */
+main nav .nav-tabs li {
   margin-right: 0px;
 }
-/* line 10, ../sass/promo-int-services-ie.scss */
-nav .nav-tabs li a {
+/* line 11, ../sass/promo-int-services-ie.scss */
+main nav .nav-tabs li a {
   z-index: 0;
 }
-/* line 13, ../sass/promo-int-services-ie.scss */
-nav .nav-tabs li a:hover {
+/* line 14, ../sass/promo-int-services-ie.scss */
+main nav .nav-tabs li a:hover {
   z-index: 0;
 }

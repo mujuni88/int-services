@@ -61,6 +61,12 @@ $container-width: 960px;
   @include background-size();
 }
 
+.pd-5{
+  padding:5px;
+}
+.pd-10{
+  padding:10px;
+}
 .pd-right-10 {
   padding-right: 10px;
 }
@@ -104,10 +110,23 @@ $container-width: 960px;
 .brd-rd-10 {
   border-radius: 10px;
 }
+.brd-top{
+  border-top:1px solid $gray-lighter;
+}
+.brd-bottom{
+  border-bottom:1px solid $gray-lighter;
+}
 
 .h1, .color-blue {
   color: $color-blue-light;
 }
+
+.download{
+  @extend .pd-10;
+  @extend .brd-bottom;
+  @extend .brd-top;
+}
+
 
 .back-to-top {
   position: fixed;
@@ -170,6 +189,7 @@ main {
 
 	  a {
 		border: 1px solid darken($color-blue-lighter, 10%);
+		border-bottom:0;
 		background-color: $color-blue-lighter;
 		color: $body-bg;
 		z-index: 0;
