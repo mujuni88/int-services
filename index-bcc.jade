@@ -1,775 +1,760 @@
-doctype html
-html
-	head
-		title C Spire Wireless unlimited plans. Unlimited data. Unlimited you.
-		meta(name='description', content='C Spire Wireless lets you pay for only the type of unlimited data you need. Buy your first plan and get the second same plan for $50.')
-		meta(property='og:image', content='http://www.cspire.com/resources/images/fb_cs_icon.jpg')
-		meta(property='og:title', content='C Spire Wireless unlimited plans. Unlimited data. Unlimited you.')
-		meta(property='og:description', content='C Spire Wireless lets you pay for only the type of unlimited data you need. Buy your first plan and get the second same plan for $50.')
-		meta(property='og:url', content='http://www.cspire.com/promos/?q=mom')
-		meta(property='og:site_name', content='cspire.com')
-		meta(property='og:type', content='website')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
+//
+	styles
+//if gte IE 9
+	style(type='text/css')
+	.gradient {
+	filter: none;
+	}
+
+link(rel='stylesheet', href='/resources/css/mobile_header.css')
+link(rel='stylesheet', href='/resources/css/mobile_footer.css')
+link(rel='stylesheet', href='/resources/css/promo-int-services.css')
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/resources/css/promo-int-services-ie.css">
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+script(src='/resources/js/jquery.1.11.0.min.js')
+script.
+	var jQuery_1_11_0 = $.noConflict(true);
+script(src='/resources/js/bootstrap-transition.js')
+script(src='/resources/js/bootstrap-tab.js')
+script(src='/resources/js/bootstrap-collapse.js')
+script(src='/resources/js/promo-int-services.js')
+
+.container-fluid.theme_default
+	.container
+		header
+			h1.color-blue
+				| International Services
+		main
+			nav
+				ul.nav.nav-tabs
+					li.active
+						a(href='#travel') International Travel
+					li
+						a(href='#calling') International Calling
+					li
+						a(href='#texting') International Texting
+
 		//
-			styles
-		//if gte IE 9
-			style(type='text/css')
-			.gradient {
-			filter: none;
-			}
-
-		link(rel='stylesheet', href='/resources/css/mobile_header.css')
-		link(rel='stylesheet', href='/resources/css/mobile_footer.css')
-		link(rel='stylesheet', href='/resources/css/promo-int-services.css')
-
-		<!--[if lt IE 9]>
-		<link rel="stylesheet" href="/resources/css/promo-int-services-ie.css">
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-		script(src='/resources/js/jquery.1.11.0.min.js')
-		script.
-			var jQuery_1_11_0 = $.noConflict(true);
-		script(src='/resources/js/bootstrap-transition.js')
-		script(src='/resources/js/bootstrap-tab.js')
-		script(src='/resources/js/bootstrap-collapse.js')
-		script(src='/resources/js/angular.min.js')
-		script(src='/resources/js/angular-sanatize.min.js')
-		script(src='/resources/js/angular-route.min.js')
-		script(src='/resources/js/promo-int-services.js')
-	body
-		.container-fluid.theme_default
-			.container
-				header
-					h1.color-blue
-						| International Services
-				main
-					nav
-						ul.nav.nav-tabs
-							li.active
-								a(href='#travel') International Travel
+			Tab panes
+		.tab-content
+			#travel.tab-pane.active
+				.row
+					.col-sm-8
+						h2.color-blue.mg-btm-0 Travel
+						p
+							| Refer to this information before using your phone outside of the U.S only Certain devices work outside of this area.
+						br
+						p
+							strong Where are you going?
+						select.form-control
+							option(value='0') -- Select --
+							option(value='Abchazia (Georgia)') Abchazia (Georgia)
+							option(value='Abu Dhabi (United Arab Emirates)') Abu Dhabi (United Arab Emirates)
+							option(value='Afghanistan') Afghanistan
+							option(value='Aland Islands (Finland)') Aland Islands (Finland)
+							option(value='Albania') Albania
+							option(value='Alderney (Guernsey)') Alderney (Guernsey)
+							option(value='Algeria') Algeria
+							option(value='American Samoa') American Samoa
+							option(value='Andorra') Andorra
+							option(value='Angola') Angola
+							option(value='Anguilla') Anguilla
+							option(value='Antarctica') Antarctica
+							option(value='Antigua and Barbuda') Antigua and Barbuda
+							option(value='Argentina') Argentina
+							option(value='Armenia') Armenia
+							option(value='Aruba') Aruba
+							option(value='Australia') Australia
+							option(value='Austria') Austria
+							option(value='Azerbaijan') Azerbaijan
+							option(value='Azores (Portugal)') Azores (Portugal)
+							option(value='Bahamas') Bahamas
+							option(value='Bahrain') Bahrain
+							option(value='Bangladesh') Bangladesh
+							option(value='Barbados') Barbados
+							option(value='Belarus') Belarus
+							option(value='Belgium') Belgium
+							option(value='Belize') Belize
+							option(value='Benin') Benin
+							option(value='Bermuda') Bermuda
+							option(value='Bhutan') Bhutan
+							option(value='Bolivia') Bolivia
+							option(value='Bonaire (Dutch Antilles)') Bonaire (Dutch Antilles)
+							option(value='Bosnia and Herzegovina') Bosnia and Herzegovina
+							option(value='Botswana') Botswana
+							option(value='Brazil') Brazil
+							option(value='Brunei Darussalam') Brunei Darussalam
+							option(value='Bulgaria') Bulgaria
+							option(value='Burkina Faso') Burkina Faso
+							option(value='Burundi') Burundi
+							option(value='Cambodia') Cambodia
+							option(value='Cameroon') Cameroon
+							option(value='Canada') Canada
+							option(value='Canary Islands (Spain)') Canary Islands (Spain)
+							option(value='Cape Verde') Cape Verde
+							option(value='Cayman Islands') Cayman Islands
+							option(value='Central African Republic') Central African Republic
+							option(value='Ceuta (Spain)') Ceuta (Spain)
+							option(value='Chad') Chad
+							option(value='Chile') Chile
+							option(value='China') China
+							option(value='Christmas Island') Christmas Island
+							option(value='Colombia') Colombia
+							option(value='Comoros') Comoros
+							option(value='Congo, (Brazzaville)') Congo, (Brazzaville)
+							option(value='Congo, (Dem.Rep., Kinshasa)') Congo, (Dem.Rep., Kinshasa)
+							option(value='Cook Islands') Cook Islands
+							option(value='Corsica (France)') Corsica (France)
+							option(value='Costa Rica') Costa Rica
+							option(value='Croatia (Local Name: Hrvatska)') Croatia (Local Name: Hrvatska)
+							option(value='Cuba') Cuba
+							option(value='Curacao (Dutch Antilles)') Curacao (Dutch Antilles)
+							option(value='Cyprus') Cyprus
+							option(value='Czech Republic') Czech Republic
+							option(value='Denmark') Denmark
+							option(value='Desirade (French Antilles)') Desirade (French Antilles)
+							option(value='Djibouti') Djibouti
+							option(value='Dominica') Dominica
+							option(value='Dominican Republic') Dominican Republic
+							option(value='Dubai (United Arab Emirates)') Dubai (United Arab Emirates)
+							option(value='East Timor') East Timor
+							option(value='Easter Island') Easter Island
+							option(value='Ecuador') Ecuador
+							option(value='Egypt') Egypt
+							option(value='El Salvador') El Salvador
+							option(value='Equatorial Guinea') Equatorial Guinea
+							option(value='Estonia') Estonia
+							option(value='Ethiopia') Ethiopia
+							option(value='Falkland Islands (Malvinas)') Falkland Islands (Malvinas)
+							option(value='Faroe Islands') Faroe Islands
+							option(value='Fiji') Fiji
+							option(value='Finland') Finland
+							option(value='France') France
+							option(value='French Guiana') French Guiana
+							option(value='French Polynesia') French Polynesia
+							option(value='Gabon') Gabon
+							option(value='Galapagos Islands') Galapagos Islands
+							option(value='Gambia') Gambia
+							option(value='Gaza strip') Gaza strip
+							option(value='Georgia') Georgia
+							option(value='Germany') Germany
+							option(value='Ghana') Ghana
+							option(value='Gibraltar') Gibraltar
+							option(value='Greece') Greece
+							option(value='Greenland') Greenland
+							option(value='Grenada') Grenada
+							option(value='Guadeloupe') Guadeloupe
+							option(value='Guam') Guam
+							option(value='Guatemala') Guatemala
+							option(value='Guernsey') Guernsey
+							option(value='Guinea') Guinea
+							option(value='Guinea-Bissau') Guinea-Bissau
+							option(value='Guyana') Guyana
+							option(value='Haiti') Haiti
+							option(value='Herm (Guernsey)') Herm (Guernsey)
+							option(value='Honduras') Honduras
+							option(value='Hong Kong') Hong Kong
+							option(value='Hungary') Hungary
+							option(value='Ibiza (Spain)') Ibiza (Spain)
+							option(value='Iceland') Iceland
+							option(value='India') India
+							option(value='India (Andra Pradesh)') India (Andra Pradesh)
+							option(value='India (Bihar)') India (Bihar)
+							option(value='India (Bombay/Mumbai)') India (Bombay/Mumbai)
+							option(value='India (Calcutta/Kolkata)') India (Calcutta/Kolkata)
+							option(value='India (Dehli)') India (Dehli)
+							option(value='India (Goa)') India (Goa)
+							option(value='India (Gujarat)') India (Gujarat)
+							option(value='India (Haryana)') India (Haryana)
+							option(value='India (Himachal Pradesh)') India (Himachal Pradesh)
+							option(value='India (Karnataka)') India (Karnataka)
+							option(value='India (Kerala)') India (Kerala)
+							option(value='India (Madhya Pradesh)') India (Madhya Pradesh)
+							option(value='India (Madras/Chennai)') India (Madras/Chennai)
+							option(value='India (Maharashtra)') India (Maharashtra)
+							option(value='India (Orissa)') India (Orissa)
+							option(value='India (Punjab)') India (Punjab)
+							option(value='India (Rajasthan)') India (Rajasthan)
+							option(value='India (Tamil Nadu)') India (Tamil Nadu)
+							option(value='India (Uttar Pradesh East)') India (Uttar Pradesh East)
+							option(value='India (Uttar Pradesh West)') India (Uttar Pradesh West)
+							option(value='India (West Bengal)') India (West Bengal)
+							option(value='Indonesia') Indonesia
+							option(value='Iran (Islamic Republic of)') Iran (Islamic Republic of)
+							option(value='Iraq') Iraq
+							option(value='Ireland') Ireland
+							option(value='Isle Of Man') Isle Of Man
+							option(value='Israel') Israel
+							option(value='Italy') Italy
+							option(value='Ivory Coast') Ivory Coast
+							option(value='Jamaica') Jamaica
+							option(value='Japan') Japan
+							option(value='Jersey') Jersey
+							option(value='Jordan') Jordan
+							option(value='Kazakhstan') Kazakhstan
+							option(value='Kenya') Kenya
+							option(value='Korea, Republic Of') Korea, Republic Of
+							option(value='Kosovo') Kosovo
+							option(value='Kreta (Greece)') Kreta (Greece)
+							option(value='Kuwait') Kuwait
+							option(value='Kyrgyzstan') Kyrgyzstan
+							option(value="Lao People's Democratic Republic") Lao People's Democratic Republic
+							option(value='Latvia') Latvia
+							option(value='Lebanon') Lebanon
+							option(value='Lesotho') Lesotho
+							option(value='Liberia') Liberia
+							option(value='Libyan Arab Jamahiriya') Libyan Arab Jamahiriya
+							option(value='Liechtenstein') Liechtenstein
+							option(value='Lithuania') Lithuania
+							option(value='Luxembourg') Luxembourg
+							option(value='Macau') Macau
+							option(value='Macedonia, The Former Yugoslav Republic of') Macedonia, The Former Yugoslav Republic of
+							option(value='Madagascar') Madagascar
+							option(value='Madeira (Portugal)') Madeira (Portugal)
+							option(value='Malawi') Malawi
+							option(value='Malaysia') Malaysia
+							option(value='Maldives') Maldives
+							option(value='Mali') Mali
+							option(value='Mallorca (Spain)') Mallorca (Spain)
+							option(value='Malta') Malta
+							option(value='Marie-Galante (French Antilles)') Marie-Galante (French Antilles)
+							option(value='Martinique') Martinique
+							option(value='Mauritania') Mauritania
+							option(value='Mauritius') Mauritius
+							option(value='Mayotte') Mayotte
+							option(value='Melilla (Spain)') Melilla (Spain)
+							option(value='Menorca (Spain)') Menorca (Spain)
+							option(value='Mexico') Mexico
+							option(value='Moldova, Republic of') Moldova, Republic of
+							option(value='Monaco') Monaco
+							option(value='Mongolia') Mongolia
+							option(value='Montenegro') Montenegro
+							option(value='Montserrat') Montserrat
+							option(value='Morocco') Morocco
+							option(value='Mozambique') Mozambique
+							option(value='Namibia') Namibia
+							option(value='Nauru') Nauru
+							option(value='Nepal') Nepal
+							option(value='Netherlands') Netherlands
+							option(value='Netherlands Antilles') Netherlands Antilles
+							option(value='New Caledonia') New Caledonia
+							option(value='New Zealand') New Zealand
+							option(value='Nicaragua') Nicaragua
+							option(value='Niger') Niger
+							option(value='Nigeria') Nigeria
+							option(value='Norfolk Island') Norfolk Island
+							option(value='Northern Cyprus') Northern Cyprus
+							option(value='Northern Ireland (United Kingdom)') Northern Ireland (United Kingdom)
+							option(value='Northern Mariana Islands') Northern Mariana Islands
+							option(value='Norway') Norway
+							option(value='Oman') Oman
+							option(value='Pakistan') Pakistan
+							option(value='Palau') Palau
+							option(value='Palestinian Territory, occupied') Palestinian Territory, occupied
+							option(value='Panama') Panama
+							option(value='Papua New Guinea') Papua New Guinea
+							option(value='Paraguay') Paraguay
+							option(value='Peru') Peru
+							option(value='Philippines') Philippines
+							option(value='Poland') Poland
+							option(value='Portugal') Portugal
+							option(value='Puerto Rico') Puerto Rico
+							option(value='Qatar') Qatar
+							option(value='Reunion') Reunion
+							option(value='Rhodos (Greece)') Rhodos (Greece)
+							option(value='Romania') Romania
+							option(value='Russian Federation') Russian Federation
+							option(value='Russian Federation (Adygeya Republic)') Russian Federation (Adygeya Republic)
+							option(value='Russian Federation (Altai Krai)') Russian Federation (Altai Krai)
+							option(value='Russian Federation (Altai Republic)') Russian Federation (Altai Republic)
+							option(value='Russian Federation (Amur Oblast)') Russian Federation (Amur Oblast)
+							option(value='Russian Federation (Arkhangelsk Oblast)') Russian Federation (Arkhangelsk Oblast)
+							option(value='Russian Federation (Astrakhan Oblast)') Russian Federation (Astrakhan Oblast)
+							option(value='Russian Federation (Bashkortostan Republic)') Russian Federation (Bashkortostan Republic)
+							option(value='Russian Federation (Belgorod Oblast)') Russian Federation (Belgorod Oblast)
+							option(value='Russian Federation (Bryansk Oblast)') Russian Federation (Bryansk Oblast)
+							option(value='Russian Federation (Buryatia Republic)') Russian Federation (Buryatia Republic)
+							option(value='Russian Federation (Chechnya Republic)') Russian Federation (Chechnya Republic)
+							option(value='Russian Federation (Chelyabinsk Oblast)') Russian Federation (Chelyabinsk Oblast)
+							option(value='Russian Federation (Chita Oblast)') Russian Federation (Chita Oblast)
+							option(value='Russian Federation (Chuvashia Republic)') Russian Federation (Chuvashia Republic)
+							option(value='Russian Federation (Dagestan Republic)') Russian Federation (Dagestan Republic)
+							option(value='Russian Federation (Evenks Autonomous)') Russian Federation (Evenks Autonomous)
+							option(value='Russian Federation (Ingushetia Republic)') Russian Federation (Ingushetia Republic)
+							option(value='Russian Federation (Irkutsk Oblast)') Russian Federation (Irkutsk Oblast)
+							option(value='Russian Federation (Ivanovo Oblast)') Russian Federation (Ivanovo Oblast)
+							option(value='Russian Federation (Jewish Autonomous)') Russian Federation (Jewish Autonomous)
+							option(value='Russian Federation (Kabardino-Balkaria Republic)') Russian Federation (Kabardino-Balkaria Republic)
+							option(value='Russian Federation (Kaliningrad Oblast)') Russian Federation (Kaliningrad Oblast)
+							option(value='Russian Federation (Kalmykia Republic)') Russian Federation (Kalmykia Republic)
+							option(value='Russian Federation (Kaluga Oblast)') Russian Federation (Kaluga Oblast)
+							option(value='Russian Federation (Kamchatka Oblast)') Russian Federation (Kamchatka Oblast)
+							option(value='Russian Federation (Karachaevo-Cherkessia Republic)') Russian Federation (Karachaevo-Cherkessia Republic)
+							option(value='Russian Federation (Karelia Republic)') Russian Federation (Karelia Republic)
+							option(value='Russian Federation (Kemerovo Oblast)') Russian Federation (Kemerovo Oblast)
+							option(value='Russian Federation (Khabarovsk Krai)') Russian Federation (Khabarovsk Krai)
+							option(value='Russian Federation (Khakassia Republic)') Russian Federation (Khakassia Republic)
+							option(value='Russian Federation (Khanty-Mansiysk Autonomous)') Russian Federation (Khanty-Mansiysk Autonomous)
+							option(value='Russian Federation (Kirov Oblast)') Russian Federation (Kirov Oblast)
+							option(value='Russian Federation (Komi Republic)') Russian Federation (Komi Republic)
+							option(value='Russian Federation (Komi-Permyaks Autonomous)') Russian Federation (Komi-Permyaks Autonomous)
+							option(value='Russian Federation (Kostroma Oblast)') Russian Federation (Kostroma Oblast)
+							option(value='Russian Federation (Krasnodar Krai)') Russian Federation (Krasnodar Krai)
+							option(value='Russian Federation (Kurgan Oblast)') Russian Federation (Kurgan Oblast)
+							option(value='Russian Federation (Kursk Oblast)') Russian Federation (Kursk Oblast)
+							option(value='Russian Federation (Leningrad Oblast)') Russian Federation (Leningrad Oblast)
+							option(value='Russian Federation (Lipetsk Oblast)') Russian Federation (Lipetsk Oblast)
+							option(value='Russian Federation (Magadan Oblast)') Russian Federation (Magadan Oblast)
+							option(value='Russian Federation (Mari El Republic)') Russian Federation (Mari El Republic)
+							option(value='Russian Federation (Mordovia Republic)') Russian Federation (Mordovia Republic)
+							option(value='Russian Federation (Moscow Oblast)') Russian Federation (Moscow Oblast)
+							option(value='Russian Federation (Moscow)') Russian Federation (Moscow)
+							option(value='Russian Federation (Murmansk Oblast)') Russian Federation (Murmansk Oblast)
+							option(value='Russian Federation (Nenetses Autonomous)') Russian Federation (Nenetses Autonomous)
+							option(value='Russian Federation (Nizhny Novgorod Oblast)') Russian Federation (Nizhny Novgorod Oblast)
+							option(value='Russian Federation (Northern Ossetia - Alaniya Republic)') Russian Federation (Northern Ossetia - Alaniya Republic)
+							option(value='Russian Federation (Novgorod Oblast)') Russian Federation (Novgorod Oblast)
+							option(value='Russian Federation (Novosibirsk Oblast)') Russian Federation (Novosibirsk Oblast)
+							option(value='Russian Federation (Omsk Oblast)') Russian Federation (Omsk Oblast)
+							option(value='Russian Federation (Orel Oblast)') Russian Federation (Orel Oblast)
+							option(value='Russian Federation (Orenburg Oblast)') Russian Federation (Orenburg Oblast)
+							option(value='Russian Federation (Penza Oblast)') Russian Federation (Penza Oblast)
+							option(value='Russian Federation (Perm Oblast)') Russian Federation (Perm Oblast)
+							option(value='Russian Federation (Primorsk Krai)') Russian Federation (Primorsk Krai)
+							option(value='Russian Federation (Pskov Oblast)') Russian Federation (Pskov Oblast)
+							option(value='Russian Federation (Rostov Oblast)') Russian Federation (Rostov Oblast)
+							option(value='Russian Federation (Ryazan Oblast)') Russian Federation (Ryazan Oblast)
+							option(value='Russian Federation (Sakha-Yahutiya Republic)') Russian Federation (Sakha-Yahutiya Republic)
+							option(value='Russian Federation (Sakhalin Oblast)') Russian Federation (Sakhalin Oblast)
+							option(value='Russian Federation (Samara Oblast)') Russian Federation (Samara Oblast)
+							option(value='Russian Federation (Saratov Oblast)') Russian Federation (Saratov Oblast)
+							option(value='Russian Federation (Smolensk Oblast)') Russian Federation (Smolensk Oblast)
+							option(value='Russian Federation (St. Petersburg)') Russian Federation (St. Petersburg)
+							option(value='Russian Federation (Stavropol Krai)') Russian Federation (Stavropol Krai)
+							option(value='Russian Federation (Sverdlovsk Oblast)') Russian Federation (Sverdlovsk Oblast)
+							option(value='Russian Federation (Taimyr Autonomous)') Russian Federation (Taimyr Autonomous)
+							option(value='Russian Federation (Tambov Oblast)') Russian Federation (Tambov Oblast)
+							option(value='Russian Federation (Tatarstan Republic)') Russian Federation (Tatarstan Republic)
+							option(value='Russian Federation (Tomsk Oblast)') Russian Federation (Tomsk Oblast)
+							option(value='Russian Federation (Tula Oblast)') Russian Federation (Tula Oblast)
+							option(value='Russian Federation (Tver Oblast)') Russian Federation (Tver Oblast)
+							option(value='Russian Federation (Tyumen Oblast)') Russian Federation (Tyumen Oblast)
+							option(value='Russian Federation (Tyva Republic)') Russian Federation (Tyva Republic)
+							option(value='Russian Federation (Udmurtia Republic)') Russian Federation (Udmurtia Republic)
+							option(value='Russian Federation (Ulan-Ude)') Russian Federation (Ulan-Ude)
+							option(value='Russian Federation (Ulyanovsk Oblast)') Russian Federation (Ulyanovsk Oblast)
+							option(value='Russian Federation (Vladimir Oblast)') Russian Federation (Vladimir Oblast)
+							option(value='Russian Federation (Vladivostok)') Russian Federation (Vladivostok)
+							option(value='Russian Federation (Volgograd Oblast)') Russian Federation (Volgograd Oblast)
+							option(value='Russian Federation (Vologda Oblast)') Russian Federation (Vologda Oblast)
+							option(value='Russian Federation (Voronezh Oblast)') Russian Federation (Voronezh Oblast)
+							option(value='Russian Federation (Yamal Nenetses Autonomous)') Russian Federation (Yamal Nenetses Autonomous)
+							option(value='Russian Federation (Yaroslavl Oblast)') Russian Federation (Yaroslavl Oblast)
+							option(value='Rwanda') Rwanda
+							option(value='Saba (Dutch Antilles)') Saba (Dutch Antilles)
+							option(value='Samoa') Samoa
+							option(value='San Marino') San Marino
+							option(value='Sao Tome And Principe') Sao Tome And Principe
+							option(value='Sardinia (Italy)') Sardinia (Italy)
+							option(value='Sark (Guernsey)') Sark (Guernsey)
+							option(value='Saudi Arabia') Saudi Arabia
+							option(value='Scotland (United Kingdom)') Scotland (United Kingdom)
+							option(value='Senegal') Senegal
+							option(value='Serbia') Serbia
+							option(value='Seychelles') Seychelles
+							option(value='Sharjah (United Arab Emirates)') Sharjah (United Arab Emirates)
+							option(value='Sicilia (Italy)') Sicilia (Italy)
+							option(value='Sierra Leone') Sierra Leone
+							option(value='Singapore') Singapore
+							option(value='Slovakia') Slovakia
+							option(value='Slovenia') Slovenia
+							option(value='Solomon Islands') Solomon Islands
+							option(value='Somalia') Somalia
+							option(value='South Africa') South Africa
+							option(value='Spain') Spain
+							option(value='Sri Lanka') Sri Lanka
+							option(value='St Barth') St Barth
+							option(value='St Eustatius (Dutch Antilles)') St Eustatius (Dutch Antilles)
+							option(value='St Helena') St Helena
+							option(value='St Kitts And Nevis') St Kitts And Nevis
+							option(value='St Lucia') St Lucia
+							option(value='St Maarten (Dutch Antilles)') St Maarten (Dutch Antilles)
+							option(value='St Martin') St Martin
+							option(value='St Vincent And The Grenadines') St Vincent And The Grenadines
+							option(value='Sudan') Sudan
+							option(value='Suriname') Suriname
+							option(value='Svalbard and Jan Mayen Islands') Svalbard and Jan Mayen Islands
+							option(value='Swaziland') Swaziland
+							option(value='Sweden') Sweden
+							option(value='Switzerland') Switzerland
+							option(value='Syrian Arab Republic') Syrian Arab Republic
+							option(value='Taiwan, Province of China') Taiwan, Province of China
+							option(value='Tajikistan') Tajikistan
+							option(value='Tanzania, United Republic of') Tanzania, United Republic of
+							option(value='Thailand') Thailand
+							option(value='The Saints (French Antilles)') The Saints (French Antilles)
+							option(value='Tibet (China)') Tibet (China)
+							option(value='Togo') Togo
+							option(value='Tonga') Tonga
+							option(value='Trinidad and Tobago') Trinidad and Tobago
+							option(value='Tunisia') Tunisia
+							option(value='Turkey') Turkey
+							option(value='Turkmenistan') Turkmenistan
+							option(value='Turks and Caicos Islands') Turks and Caicos Islands
+							option(value='Uganda') Uganda
+							option(value='Ukraine') Ukraine
+							option(value='United Arab Emirates') United Arab Emirates
+							option(value='United Kingdom') United Kingdom
+							option(value='Uruguay') Uruguay
+							option(value='Uzbekistan') Uzbekistan
+							option(value='Vanuatu') Vanuatu
+							option(value='Vatican City State (Holy See)') Vatican City State (Holy See)
+							option(value='Venezuela') Venezuela
+							option(value='Viet Nam') Viet Nam
+							option(value='Virgin Islands (British)') Virgin Islands (British)
+							option(value='Virgin Islands (U.S.)') Virgin Islands (U.S.)
+							option(value='Wales (United Kingdom)') Wales (United Kingdom)
+							option(value='West Bank') West Bank
+							option(value='Western Sahara') Western Sahara
+							option(value='Yemen') Yemen
+							option(value='Zambia') Zambia
+							option(value='Zanzibar') Zanzibar
+							option(value='Zimbabwe') Zimbabwe
+						br
+						p
+							small
+								em To find a location, start typing or click the arrow to scroll.
+						br
+						br
+					.col-sm-4
+				.row
+					.col-sm-8
+						p
+							strong International Dialing Instructions
+						br
+						p Outside of the United States
+						ul
 							li
-								a(href='#calling') International Calling
+								p
+									strong Calling a U.S. number: &#32;
+									| Dial the plus key (+), the U.S. country code (1) and the 10-digit number
 							li
-								a(href='#texting') International Texting
-
-				//
-					Tab panes
-				.tab-content
-					#travel.tab-pane.active
-						.row
-							.col-sm-8
-								h2.color-blue.mg-btm-0 Travel
 								p
-									| Refer to this information before using your phone outside of the U.S only Certain devices work outside of this area.
-								br
+									strong Texting a U.S. number: &#32;
+									| Enter the US country code (1) and the 10-digit number of the recipient
+							li
 								p
-									strong Where are you going?
-								select.form-control
-									option(value='0') -- Select --
-									option(value='Abchazia (Georgia)') Abchazia (Georgia)
-									option(value='Abu Dhabi (United Arab Emirates)') Abu Dhabi (United Arab Emirates)
-									option(value='Afghanistan') Afghanistan
-									option(value='Aland Islands (Finland)') Aland Islands (Finland)
-									option(value='Albania') Albania
-									option(value='Alderney (Guernsey)') Alderney (Guernsey)
-									option(value='Algeria') Algeria
-									option(value='American Samoa') American Samoa
-									option(value='Andorra') Andorra
-									option(value='Angola') Angola
-									option(value='Anguilla') Anguilla
-									option(value='Antarctica') Antarctica
-									option(value='Antigua and Barbuda') Antigua and Barbuda
-									option(value='Argentina') Argentina
-									option(value='Armenia') Armenia
-									option(value='Aruba') Aruba
-									option(value='Australia') Australia
-									option(value='Austria') Austria
-									option(value='Azerbaijan') Azerbaijan
-									option(value='Azores (Portugal)') Azores (Portugal)
-									option(value='Bahamas') Bahamas
-									option(value='Bahrain') Bahrain
-									option(value='Bangladesh') Bangladesh
-									option(value='Barbados') Barbados
-									option(value='Belarus') Belarus
-									option(value='Belgium') Belgium
-									option(value='Belize') Belize
-									option(value='Benin') Benin
-									option(value='Bermuda') Bermuda
-									option(value='Bhutan') Bhutan
-									option(value='Bolivia') Bolivia
-									option(value='Bonaire (Dutch Antilles)') Bonaire (Dutch Antilles)
-									option(value='Bosnia and Herzegovina') Bosnia and Herzegovina
-									option(value='Botswana') Botswana
-									option(value='Brazil') Brazil
-									option(value='Brunei Darussalam') Brunei Darussalam
-									option(value='Bulgaria') Bulgaria
-									option(value='Burkina Faso') Burkina Faso
-									option(value='Burundi') Burundi
-									option(value='Cambodia') Cambodia
-									option(value='Cameroon') Cameroon
-									option(value='Canada') Canada
-									option(value='Canary Islands (Spain)') Canary Islands (Spain)
-									option(value='Cape Verde') Cape Verde
-									option(value='Cayman Islands') Cayman Islands
-									option(value='Central African Republic') Central African Republic
-									option(value='Ceuta (Spain)') Ceuta (Spain)
-									option(value='Chad') Chad
-									option(value='Chile') Chile
-									option(value='China') China
-									option(value='Christmas Island') Christmas Island
-									option(value='Colombia') Colombia
-									option(value='Comoros') Comoros
-									option(value='Congo, (Brazzaville)') Congo, (Brazzaville)
-									option(value='Congo, (Dem.Rep., Kinshasa)') Congo, (Dem.Rep., Kinshasa)
-									option(value='Cook Islands') Cook Islands
-									option(value='Corsica (France)') Corsica (France)
-									option(value='Costa Rica') Costa Rica
-									option(value='Croatia (Local Name: Hrvatska)') Croatia (Local Name: Hrvatska)
-									option(value='Cuba') Cuba
-									option(value='Curacao (Dutch Antilles)') Curacao (Dutch Antilles)
-									option(value='Cyprus') Cyprus
-									option(value='Czech Republic') Czech Republic
-									option(value='Denmark') Denmark
-									option(value='Desirade (French Antilles)') Desirade (French Antilles)
-									option(value='Djibouti') Djibouti
-									option(value='Dominica') Dominica
-									option(value='Dominican Republic') Dominican Republic
-									option(value='Dubai (United Arab Emirates)') Dubai (United Arab Emirates)
-									option(value='East Timor') East Timor
-									option(value='Easter Island') Easter Island
-									option(value='Ecuador') Ecuador
-									option(value='Egypt') Egypt
-									option(value='El Salvador') El Salvador
-									option(value='Equatorial Guinea') Equatorial Guinea
-									option(value='Estonia') Estonia
-									option(value='Ethiopia') Ethiopia
-									option(value='Falkland Islands (Malvinas)') Falkland Islands (Malvinas)
-									option(value='Faroe Islands') Faroe Islands
-									option(value='Fiji') Fiji
-									option(value='Finland') Finland
-									option(value='France') France
-									option(value='French Guiana') French Guiana
-									option(value='French Polynesia') French Polynesia
-									option(value='Gabon') Gabon
-									option(value='Galapagos Islands') Galapagos Islands
-									option(value='Gambia') Gambia
-									option(value='Gaza strip') Gaza strip
-									option(value='Georgia') Georgia
-									option(value='Germany') Germany
-									option(value='Ghana') Ghana
-									option(value='Gibraltar') Gibraltar
-									option(value='Greece') Greece
-									option(value='Greenland') Greenland
-									option(value='Grenada') Grenada
-									option(value='Guadeloupe') Guadeloupe
-									option(value='Guam') Guam
-									option(value='Guatemala') Guatemala
-									option(value='Guernsey') Guernsey
-									option(value='Guinea') Guinea
-									option(value='Guinea-Bissau') Guinea-Bissau
-									option(value='Guyana') Guyana
-									option(value='Haiti') Haiti
-									option(value='Herm (Guernsey)') Herm (Guernsey)
-									option(value='Honduras') Honduras
-									option(value='Hong Kong') Hong Kong
-									option(value='Hungary') Hungary
-									option(value='Ibiza (Spain)') Ibiza (Spain)
-									option(value='Iceland') Iceland
-									option(value='India') India
-									option(value='India (Andra Pradesh)') India (Andra Pradesh)
-									option(value='India (Bihar)') India (Bihar)
-									option(value='India (Bombay/Mumbai)') India (Bombay/Mumbai)
-									option(value='India (Calcutta/Kolkata)') India (Calcutta/Kolkata)
-									option(value='India (Dehli)') India (Dehli)
-									option(value='India (Goa)') India (Goa)
-									option(value='India (Gujarat)') India (Gujarat)
-									option(value='India (Haryana)') India (Haryana)
-									option(value='India (Himachal Pradesh)') India (Himachal Pradesh)
-									option(value='India (Karnataka)') India (Karnataka)
-									option(value='India (Kerala)') India (Kerala)
-									option(value='India (Madhya Pradesh)') India (Madhya Pradesh)
-									option(value='India (Madras/Chennai)') India (Madras/Chennai)
-									option(value='India (Maharashtra)') India (Maharashtra)
-									option(value='India (Orissa)') India (Orissa)
-									option(value='India (Punjab)') India (Punjab)
-									option(value='India (Rajasthan)') India (Rajasthan)
-									option(value='India (Tamil Nadu)') India (Tamil Nadu)
-									option(value='India (Uttar Pradesh East)') India (Uttar Pradesh East)
-									option(value='India (Uttar Pradesh West)') India (Uttar Pradesh West)
-									option(value='India (West Bengal)') India (West Bengal)
-									option(value='Indonesia') Indonesia
-									option(value='Iran (Islamic Republic of)') Iran (Islamic Republic of)
-									option(value='Iraq') Iraq
-									option(value='Ireland') Ireland
-									option(value='Isle Of Man') Isle Of Man
-									option(value='Israel') Israel
-									option(value='Italy') Italy
-									option(value='Ivory Coast') Ivory Coast
-									option(value='Jamaica') Jamaica
-									option(value='Japan') Japan
-									option(value='Jersey') Jersey
-									option(value='Jordan') Jordan
-									option(value='Kazakhstan') Kazakhstan
-									option(value='Kenya') Kenya
-									option(value='Korea, Republic Of') Korea, Republic Of
-									option(value='Kosovo') Kosovo
-									option(value='Kreta (Greece)') Kreta (Greece)
-									option(value='Kuwait') Kuwait
-									option(value='Kyrgyzstan') Kyrgyzstan
-									option(value="Lao People's Democratic Republic") Lao People's Democratic Republic
-									option(value='Latvia') Latvia
-									option(value='Lebanon') Lebanon
-									option(value='Lesotho') Lesotho
-									option(value='Liberia') Liberia
-									option(value='Libyan Arab Jamahiriya') Libyan Arab Jamahiriya
-									option(value='Liechtenstein') Liechtenstein
-									option(value='Lithuania') Lithuania
-									option(value='Luxembourg') Luxembourg
-									option(value='Macau') Macau
-									option(value='Macedonia, The Former Yugoslav Republic of') Macedonia, The Former Yugoslav Republic of
-									option(value='Madagascar') Madagascar
-									option(value='Madeira (Portugal)') Madeira (Portugal)
-									option(value='Malawi') Malawi
-									option(value='Malaysia') Malaysia
-									option(value='Maldives') Maldives
-									option(value='Mali') Mali
-									option(value='Mallorca (Spain)') Mallorca (Spain)
-									option(value='Malta') Malta
-									option(value='Marie-Galante (French Antilles)') Marie-Galante (French Antilles)
-									option(value='Martinique') Martinique
-									option(value='Mauritania') Mauritania
-									option(value='Mauritius') Mauritius
-									option(value='Mayotte') Mayotte
-									option(value='Melilla (Spain)') Melilla (Spain)
-									option(value='Menorca (Spain)') Menorca (Spain)
-									option(value='Mexico') Mexico
-									option(value='Moldova, Republic of') Moldova, Republic of
-									option(value='Monaco') Monaco
-									option(value='Mongolia') Mongolia
-									option(value='Montenegro') Montenegro
-									option(value='Montserrat') Montserrat
-									option(value='Morocco') Morocco
-									option(value='Mozambique') Mozambique
-									option(value='Namibia') Namibia
-									option(value='Nauru') Nauru
-									option(value='Nepal') Nepal
-									option(value='Netherlands') Netherlands
-									option(value='Netherlands Antilles') Netherlands Antilles
-									option(value='New Caledonia') New Caledonia
-									option(value='New Zealand') New Zealand
-									option(value='Nicaragua') Nicaragua
-									option(value='Niger') Niger
-									option(value='Nigeria') Nigeria
-									option(value='Norfolk Island') Norfolk Island
-									option(value='Northern Cyprus') Northern Cyprus
-									option(value='Northern Ireland (United Kingdom)') Northern Ireland (United Kingdom)
-									option(value='Northern Mariana Islands') Northern Mariana Islands
-									option(value='Norway') Norway
-									option(value='Oman') Oman
-									option(value='Pakistan') Pakistan
-									option(value='Palau') Palau
-									option(value='Palestinian Territory, occupied') Palestinian Territory, occupied
-									option(value='Panama') Panama
-									option(value='Papua New Guinea') Papua New Guinea
-									option(value='Paraguay') Paraguay
-									option(value='Peru') Peru
-									option(value='Philippines') Philippines
-									option(value='Poland') Poland
-									option(value='Portugal') Portugal
-									option(value='Puerto Rico') Puerto Rico
-									option(value='Qatar') Qatar
-									option(value='Reunion') Reunion
-									option(value='Rhodos (Greece)') Rhodos (Greece)
-									option(value='Romania') Romania
-									option(value='Russian Federation') Russian Federation
-									option(value='Russian Federation (Adygeya Republic)') Russian Federation (Adygeya Republic)
-									option(value='Russian Federation (Altai Krai)') Russian Federation (Altai Krai)
-									option(value='Russian Federation (Altai Republic)') Russian Federation (Altai Republic)
-									option(value='Russian Federation (Amur Oblast)') Russian Federation (Amur Oblast)
-									option(value='Russian Federation (Arkhangelsk Oblast)') Russian Federation (Arkhangelsk Oblast)
-									option(value='Russian Federation (Astrakhan Oblast)') Russian Federation (Astrakhan Oblast)
-									option(value='Russian Federation (Bashkortostan Republic)') Russian Federation (Bashkortostan Republic)
-									option(value='Russian Federation (Belgorod Oblast)') Russian Federation (Belgorod Oblast)
-									option(value='Russian Federation (Bryansk Oblast)') Russian Federation (Bryansk Oblast)
-									option(value='Russian Federation (Buryatia Republic)') Russian Federation (Buryatia Republic)
-									option(value='Russian Federation (Chechnya Republic)') Russian Federation (Chechnya Republic)
-									option(value='Russian Federation (Chelyabinsk Oblast)') Russian Federation (Chelyabinsk Oblast)
-									option(value='Russian Federation (Chita Oblast)') Russian Federation (Chita Oblast)
-									option(value='Russian Federation (Chuvashia Republic)') Russian Federation (Chuvashia Republic)
-									option(value='Russian Federation (Dagestan Republic)') Russian Federation (Dagestan Republic)
-									option(value='Russian Federation (Evenks Autonomous)') Russian Federation (Evenks Autonomous)
-									option(value='Russian Federation (Ingushetia Republic)') Russian Federation (Ingushetia Republic)
-									option(value='Russian Federation (Irkutsk Oblast)') Russian Federation (Irkutsk Oblast)
-									option(value='Russian Federation (Ivanovo Oblast)') Russian Federation (Ivanovo Oblast)
-									option(value='Russian Federation (Jewish Autonomous)') Russian Federation (Jewish Autonomous)
-									option(value='Russian Federation (Kabardino-Balkaria Republic)') Russian Federation (Kabardino-Balkaria Republic)
-									option(value='Russian Federation (Kaliningrad Oblast)') Russian Federation (Kaliningrad Oblast)
-									option(value='Russian Federation (Kalmykia Republic)') Russian Federation (Kalmykia Republic)
-									option(value='Russian Federation (Kaluga Oblast)') Russian Federation (Kaluga Oblast)
-									option(value='Russian Federation (Kamchatka Oblast)') Russian Federation (Kamchatka Oblast)
-									option(value='Russian Federation (Karachaevo-Cherkessia Republic)') Russian Federation (Karachaevo-Cherkessia Republic)
-									option(value='Russian Federation (Karelia Republic)') Russian Federation (Karelia Republic)
-									option(value='Russian Federation (Kemerovo Oblast)') Russian Federation (Kemerovo Oblast)
-									option(value='Russian Federation (Khabarovsk Krai)') Russian Federation (Khabarovsk Krai)
-									option(value='Russian Federation (Khakassia Republic)') Russian Federation (Khakassia Republic)
-									option(value='Russian Federation (Khanty-Mansiysk Autonomous)') Russian Federation (Khanty-Mansiysk Autonomous)
-									option(value='Russian Federation (Kirov Oblast)') Russian Federation (Kirov Oblast)
-									option(value='Russian Federation (Komi Republic)') Russian Federation (Komi Republic)
-									option(value='Russian Federation (Komi-Permyaks Autonomous)') Russian Federation (Komi-Permyaks Autonomous)
-									option(value='Russian Federation (Kostroma Oblast)') Russian Federation (Kostroma Oblast)
-									option(value='Russian Federation (Krasnodar Krai)') Russian Federation (Krasnodar Krai)
-									option(value='Russian Federation (Kurgan Oblast)') Russian Federation (Kurgan Oblast)
-									option(value='Russian Federation (Kursk Oblast)') Russian Federation (Kursk Oblast)
-									option(value='Russian Federation (Leningrad Oblast)') Russian Federation (Leningrad Oblast)
-									option(value='Russian Federation (Lipetsk Oblast)') Russian Federation (Lipetsk Oblast)
-									option(value='Russian Federation (Magadan Oblast)') Russian Federation (Magadan Oblast)
-									option(value='Russian Federation (Mari El Republic)') Russian Federation (Mari El Republic)
-									option(value='Russian Federation (Mordovia Republic)') Russian Federation (Mordovia Republic)
-									option(value='Russian Federation (Moscow Oblast)') Russian Federation (Moscow Oblast)
-									option(value='Russian Federation (Moscow)') Russian Federation (Moscow)
-									option(value='Russian Federation (Murmansk Oblast)') Russian Federation (Murmansk Oblast)
-									option(value='Russian Federation (Nenetses Autonomous)') Russian Federation (Nenetses Autonomous)
-									option(value='Russian Federation (Nizhny Novgorod Oblast)') Russian Federation (Nizhny Novgorod Oblast)
-									option(value='Russian Federation (Northern Ossetia - Alaniya Republic)') Russian Federation (Northern Ossetia - Alaniya Republic)
-									option(value='Russian Federation (Novgorod Oblast)') Russian Federation (Novgorod Oblast)
-									option(value='Russian Federation (Novosibirsk Oblast)') Russian Federation (Novosibirsk Oblast)
-									option(value='Russian Federation (Omsk Oblast)') Russian Federation (Omsk Oblast)
-									option(value='Russian Federation (Orel Oblast)') Russian Federation (Orel Oblast)
-									option(value='Russian Federation (Orenburg Oblast)') Russian Federation (Orenburg Oblast)
-									option(value='Russian Federation (Penza Oblast)') Russian Federation (Penza Oblast)
-									option(value='Russian Federation (Perm Oblast)') Russian Federation (Perm Oblast)
-									option(value='Russian Federation (Primorsk Krai)') Russian Federation (Primorsk Krai)
-									option(value='Russian Federation (Pskov Oblast)') Russian Federation (Pskov Oblast)
-									option(value='Russian Federation (Rostov Oblast)') Russian Federation (Rostov Oblast)
-									option(value='Russian Federation (Ryazan Oblast)') Russian Federation (Ryazan Oblast)
-									option(value='Russian Federation (Sakha-Yahutiya Republic)') Russian Federation (Sakha-Yahutiya Republic)
-									option(value='Russian Federation (Sakhalin Oblast)') Russian Federation (Sakhalin Oblast)
-									option(value='Russian Federation (Samara Oblast)') Russian Federation (Samara Oblast)
-									option(value='Russian Federation (Saratov Oblast)') Russian Federation (Saratov Oblast)
-									option(value='Russian Federation (Smolensk Oblast)') Russian Federation (Smolensk Oblast)
-									option(value='Russian Federation (St. Petersburg)') Russian Federation (St. Petersburg)
-									option(value='Russian Federation (Stavropol Krai)') Russian Federation (Stavropol Krai)
-									option(value='Russian Federation (Sverdlovsk Oblast)') Russian Federation (Sverdlovsk Oblast)
-									option(value='Russian Federation (Taimyr Autonomous)') Russian Federation (Taimyr Autonomous)
-									option(value='Russian Federation (Tambov Oblast)') Russian Federation (Tambov Oblast)
-									option(value='Russian Federation (Tatarstan Republic)') Russian Federation (Tatarstan Republic)
-									option(value='Russian Federation (Tomsk Oblast)') Russian Federation (Tomsk Oblast)
-									option(value='Russian Federation (Tula Oblast)') Russian Federation (Tula Oblast)
-									option(value='Russian Federation (Tver Oblast)') Russian Federation (Tver Oblast)
-									option(value='Russian Federation (Tyumen Oblast)') Russian Federation (Tyumen Oblast)
-									option(value='Russian Federation (Tyva Republic)') Russian Federation (Tyva Republic)
-									option(value='Russian Federation (Udmurtia Republic)') Russian Federation (Udmurtia Republic)
-									option(value='Russian Federation (Ulan-Ude)') Russian Federation (Ulan-Ude)
-									option(value='Russian Federation (Ulyanovsk Oblast)') Russian Federation (Ulyanovsk Oblast)
-									option(value='Russian Federation (Vladimir Oblast)') Russian Federation (Vladimir Oblast)
-									option(value='Russian Federation (Vladivostok)') Russian Federation (Vladivostok)
-									option(value='Russian Federation (Volgograd Oblast)') Russian Federation (Volgograd Oblast)
-									option(value='Russian Federation (Vologda Oblast)') Russian Federation (Vologda Oblast)
-									option(value='Russian Federation (Voronezh Oblast)') Russian Federation (Voronezh Oblast)
-									option(value='Russian Federation (Yamal Nenetses Autonomous)') Russian Federation (Yamal Nenetses Autonomous)
-									option(value='Russian Federation (Yaroslavl Oblast)') Russian Federation (Yaroslavl Oblast)
-									option(value='Rwanda') Rwanda
-									option(value='Saba (Dutch Antilles)') Saba (Dutch Antilles)
-									option(value='Samoa') Samoa
-									option(value='San Marino') San Marino
-									option(value='Sao Tome And Principe') Sao Tome And Principe
-									option(value='Sardinia (Italy)') Sardinia (Italy)
-									option(value='Sark (Guernsey)') Sark (Guernsey)
-									option(value='Saudi Arabia') Saudi Arabia
-									option(value='Scotland (United Kingdom)') Scotland (United Kingdom)
-									option(value='Senegal') Senegal
-									option(value='Serbia') Serbia
-									option(value='Seychelles') Seychelles
-									option(value='Sharjah (United Arab Emirates)') Sharjah (United Arab Emirates)
-									option(value='Sicilia (Italy)') Sicilia (Italy)
-									option(value='Sierra Leone') Sierra Leone
-									option(value='Singapore') Singapore
-									option(value='Slovakia') Slovakia
-									option(value='Slovenia') Slovenia
-									option(value='Solomon Islands') Solomon Islands
-									option(value='Somalia') Somalia
-									option(value='South Africa') South Africa
-									option(value='Spain') Spain
-									option(value='Sri Lanka') Sri Lanka
-									option(value='St Barth') St Barth
-									option(value='St Eustatius (Dutch Antilles)') St Eustatius (Dutch Antilles)
-									option(value='St Helena') St Helena
-									option(value='St Kitts And Nevis') St Kitts And Nevis
-									option(value='St Lucia') St Lucia
-									option(value='St Maarten (Dutch Antilles)') St Maarten (Dutch Antilles)
-									option(value='St Martin') St Martin
-									option(value='St Vincent And The Grenadines') St Vincent And The Grenadines
-									option(value='Sudan') Sudan
-									option(value='Suriname') Suriname
-									option(value='Svalbard and Jan Mayen Islands') Svalbard and Jan Mayen Islands
-									option(value='Swaziland') Swaziland
-									option(value='Sweden') Sweden
-									option(value='Switzerland') Switzerland
-									option(value='Syrian Arab Republic') Syrian Arab Republic
-									option(value='Taiwan, Province of China') Taiwan, Province of China
-									option(value='Tajikistan') Tajikistan
-									option(value='Tanzania, United Republic of') Tanzania, United Republic of
-									option(value='Thailand') Thailand
-									option(value='The Saints (French Antilles)') The Saints (French Antilles)
-									option(value='Tibet (China)') Tibet (China)
-									option(value='Togo') Togo
-									option(value='Tonga') Tonga
-									option(value='Trinidad and Tobago') Trinidad and Tobago
-									option(value='Tunisia') Tunisia
-									option(value='Turkey') Turkey
-									option(value='Turkmenistan') Turkmenistan
-									option(value='Turks and Caicos Islands') Turks and Caicos Islands
-									option(value='Uganda') Uganda
-									option(value='Ukraine') Ukraine
-									option(value='United Arab Emirates') United Arab Emirates
-									option(value='United Kingdom') United Kingdom
-									option(value='Uruguay') Uruguay
-									option(value='Uzbekistan') Uzbekistan
-									option(value='Vanuatu') Vanuatu
-									option(value='Vatican City State (Holy See)') Vatican City State (Holy See)
-									option(value='Venezuela') Venezuela
-									option(value='Viet Nam') Viet Nam
-									option(value='Virgin Islands (British)') Virgin Islands (British)
-									option(value='Virgin Islands (U.S.)') Virgin Islands (U.S.)
-									option(value='Wales (United Kingdom)') Wales (United Kingdom)
-									option(value='West Bank') West Bank
-									option(value='Western Sahara') Western Sahara
-									option(value='Yemen') Yemen
-									option(value='Zambia') Zambia
-									option(value='Zanzibar') Zanzibar
-									option(value='Zimbabwe') Zimbabwe
-								br
-								p
-									small
-										em To find a location, start typing or click the arrow to scroll.
-								br
-								br
-							.col-sm-4
-						.row
-							.col-sm-8
-								p
-									strong International Dialing Instructions
-								br
-								p Outside of the United States
-								ul
-									li
-										p
-											strong Calling a U.S. number: &#32;
-											| Dial the plus key (+), the U.S. country code (1) and the 10-digit number
-									li
-										p
-											strong Texting a U.S. number: &#32;
-											| Enter the US country code (1) and the 10-digit number of the recipient
-									li
-										p
-											strong Calling between countries: &#32;
-											| Dial the plus key (+), the destination country code and the phone number
-								br
-								p Press and hold the zero key (0) to dial the plus key (+).
-								p
-									span.clr-red For Assistance Abroad
-									span &#32; - Dial +1-601-487-7985 for C Spire Customer Care.
-									br
-									small
-										| The international roaming rates provided by area are updated periodically and are subject to change without notice. While travelling outside of the United States, calls to toll-free numbers incur charges and/or use airtime depending on your location and calling plan. Roaming is not available in the Gulf of Mexico. Charges for usage while travelling internationally may appear on your bill up to 60 days after the charges were incurred. The account holder is responsible for all fees associated with the International Roaming feature and all charges for usage incurred while travelling internationally.
-							.col-sm-4
-								div
-									strong Contact Customer Care
-									p There are several ways to contact us:
-									ul
-										li
-											a(href='mailto:askus@cspire.com') Email
-										li
-											p
-												| Call toll-free &#32;
-												strong 1-855-CSPIRE5 <br>
-												| (277-4735) from any phone
-										li
-											p
-												| Call &#32;
-												strong 611 &#32;
-												| from your C Spire phone
-										li
-											p
-												| Text a message to &#32;
-												strong 611 &#32;
-												| or use the &#32;
-												strong Text<br> CS &#32;
-												| icon on your smartphone
-								br
-								.download
-									a(href='http://circle.cspire.com/docs/DOC-1512', target='_blank') Download/print information
-								br
-								#accordion
+									strong Calling between countries: &#32;
+									| Dial the plus key (+), the destination country code and the phone number
+						br
+						p Press and hold the zero key (0) to dial the plus key (+).
+						p
+							span.clr-red For Assistance Abroad
+							span &#32; - Dial +1-601-487-7985 for C Spire Customer Care.
+							br
+							small
+								| The international roaming rates provided by area are updated periodically and are subject to change without notice. While travelling outside of the United States, calls to toll-free numbers incur charges and/or use airtime depending on your location and calling plan. Roaming is not available in the Gulf of Mexico. Charges for usage while travelling internationally may appear on your bill up to 60 days after the charges were incurred. The account holder is responsible for all fees associated with the International Roaming feature and all charges for usage incurred while travelling internationally.
+					.col-sm-4
+						div
+							strong Contact Customer Care
+							p There are several ways to contact us:
+							ul
+								li
+									a(href='mailto:askus@cspire.com') Email
+								li
 									p
-										strong Support
-									ul.list-unstyled
-										li
-											a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
-												span Requesting International Access
-											#collapseOne.collapse
-												p
-													| To use your phone outside of the continental United States,
-													u you must first request access by contacting Customer Care
-													| . It is important to contact Customer Care before you travel to ensure that your wireless number is authorized for use outside of the U.S. (Access is also required for travel to Puerto Rico, the Bahamas, the U.S. Virgin Islands and Canada.)
-													br
-													br
-													| To use a world-capable phone internationally, you will need to add the International Roaming Feature ($20 activation / $5 monthly fee) and purchase an international SIM card.
-										li
-											a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
-												span International Roaming Feature
-											#collapseTwo.collapse
-												p
-													| Before you can use a C Spire world-capable phone internationally, the International Roaming feature must be added to your account. There is a $20 activation fee and a $5 monthly fee.
-													br
-													br
-													| The International Roaming feature can be cancelled at any time but the activation fee applies each time the feature is added to your account.
-										li
-											a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
-												span International SIM Card
-											#collapseThree.collapse
-												p
-													| World-capable phones require a SIM card to roam internationally. SIM cards can be
-													a(href='http://www.cspire.com/shop_and_learn/accessories/category_accessories_list.jsp?_DARGS=/global/nav/accessory-categories.jsp.5_AF&_dynSessConf=-8492325173092942886&_D%3A/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.showAllTypes=+&/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.showAllTypes=false&/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.accessoryTypes=SIM+Cards&_D%3A/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.accessoryTypes=+&id=cat550004') purchased online
-													| ,
-													| by calling 1-855-CSPIRE4 (277-4734) or in a
-													a(href='http://www.cspire.com/coverage/index.jsp#/stores') retail location
-													| .
-													br
-													br
-													| Proper
-													a(href='http://circle.cspire.com/docs/DOC-1145') installation and activation of a SIM card
-													| is crucial to being able to use your phone internationally.
-										li
-											a(data-toggle='collapse', data-parent='#accordion', href='#collapseFour')
-												span International Loaner Phone Program
-											#collapseFour.collapse
-												div
-													p
-														| If you don’t have a world-capable phone, we can provide you with one for use outside of the continental United States for up to one month.
-														br
-														br
-														| The following criteria must be met in order to participate in the International Loaner Phone program:
-														br
-													ul#faqs
-														li You must be a postpaid customer in good standing for at least one year.
-														li The loaner phone must be requested by the account holder.
-														li You must purchase a SIM card to use in the loaner phone.
-														li
-															| All lines associated with the account holder’s Social Security number must be current. Past-due balances must be paid before being able to participate.
-														li
-															| You must complete the International Loaner Phone agreement.
-															a(href='http://circle.cspire.com/docs/DOC-1146') View a sample of the agreement.
-													p
-														| Please visit a &nbsp;
-														a(href='http://www.cspire.com/coverage/index.jsp#/stores') retail location
-														| to request an international loaner phone or for more information.
-										li
-											a(data-toggle='collapse', data-parent='#accordion', href='#collapseFive')
-												span Checking Voice Mail
-											#collapseFive.collapse
-												p
-													| While in an international location, dial the plus key (+), the US country code (1) and your 10-digit wireless number.
-													br
-													br
-													| Press the star key (*) as soon as you hear your outgoing message. Roaming charges (if applicable) apply when checking your voice mail while outside of the US.
-													br
-													br
-													| Press and hold the zero key (0) to dial the plus key (+).
-										li
-											a(data-toggle='collapse', data-parent='#accordion', href='#collapseSix')
-												span Data Usage
-											#collapseSix.collapse
-												p
-													| Data usage (where available) is billed at $5 per megabyte (MB).
-													br
-													br
-													| How big is a megabyte?
-												ul#faqs
-													li One typically sized photo
-													li One minute of near CD-quality MP3 compressed music
-													li Approximately 100 pages of single-spaced 12-point text in MS Word
-													li 67 email messages at 15KB each
-					#calling.tab-pane
-						.row
-							.col-sm-8
-								h2.color-blue
-									| Calling
-								br
-								p.
-									Calls made to locations outside of the United States, Puerto Rico or the U.S. Virgin Islands are considered international calls. These calls are subject to an international per-minute long distance rate and also use airtime.
-								br
-								p.
-									Calls to Canada or any area that is part of the North American Number Plan (with 10-digit dialing) can be dialed directly and placed without requesting access. Calls to Canada incur international charges. (See chart below.)
-								br
-								p.
-									International calls to all other locations are blocked until you specifically request access. We do not provide the ability to make an international call initially (with the exception of Canada) because making an international call isn't like calling across the country. We want to make sure you're aware of all the charges before you call.
-								br
-								p.
-									Calls placed to an international location<br>
-									If you're calling a location outside of the United States, Puerto Rico or the U.S. Virgin Islands, you'll be charged international long distance rates. Just like with any other call from your phone, you'll also use airtime minutes, if applicable.
-								br
-								.table-responsive
-									table.table.table-bordered-blue.text-center
-										thead
-											tr
-												th
-													p Calls To
-												th
-													p International <br> Long Distance
-										tbody
-											tr
-												td.col-sm-6
-													p North America (includes Canada and non-U.S. Caribbean)
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p Central America and Mexico
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p South America
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p Europe
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p Middle East
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p Australia
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p Asia
-												td.col-sm-6
-													p 50&cent;/min.
-											tr
-												td.col-sm-6
-													p Africa
-												td.col-sm-6
-													p 50&cent;/min.
+										| Call toll-free &#32;
+										strong 1-855-CSPIRE5 <br>
+										| (277-4735) from any phone
+								li
+									p
+										| Call &#32;
+										strong 611 &#32;
+										| from your C Spire phone
+								li
+									p
+										| Text a message to &#32;
+										strong 611 &#32;
+										| or use the &#32;
+										strong Text<br> CS &#32;
+										| icon on your smartphone
+						br
+						.download
+							a(href='http://circle.cspire.com/docs/DOC-1512', target='_blank') Download/print information
+						br
+						#accordion
+							p
+								strong Support
+							ul.list-unstyled
+								li
+									a(data-toggle='collapse', data-parent='#accordion', href='#collapseOne')
+										span Requesting International Access
+									#collapseOne.collapse
+										p
+											| To use your phone outside of the continental United States,
+											u you must first request access by contacting Customer Care
+											| . It is important to contact Customer Care before you travel to ensure that your wireless number is authorized for use outside of the U.S. (Access is also required for travel to Puerto Rico, the Bahamas, the U.S. Virgin Islands and Canada.)
+											br
+											br
+											| To use a world-capable phone internationally, you will need to add the International Roaming Feature ($20 activation / $5 monthly fee) and purchase an international SIM card.
+								li
+									a(data-toggle='collapse', data-parent='#accordion', href='#collapseTwo')
+										span International Roaming Feature
+									#collapseTwo.collapse
+										p
+											| Before you can use a C Spire world-capable phone internationally, the International Roaming feature must be added to your account. There is a $20 activation fee and a $5 monthly fee.
+											br
+											br
+											| The International Roaming feature can be cancelled at any time but the activation fee applies each time the feature is added to your account.
+								li
+									a(data-toggle='collapse', data-parent='#accordion', href='#collapseThree')
+										span International SIM Card
+									#collapseThree.collapse
+										p
+											| World-capable phones require a SIM card to roam internationally. SIM cards can be
+											a(href='http://www.cspire.com/shop_and_learn/accessories/category_accessories_list.jsp?_DARGS=/global/nav/accessory-categories.jsp.5_AF&_dynSessConf=-8492325173092942886&_D%3A/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.showAllTypes=+&/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.showAllTypes=false&/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.accessoryTypes=SIM+Cards&_D%3A/cellularsouth/handlers/filter/estore/AccessoryFilterFormHandler.accessoryTypes=+&id=cat550004') purchased online
+											| ,
+											| by calling 1-855-CSPIRE4 (277-4734) or in a
+											a(href='http://www.cspire.com/coverage/index.jsp#/stores') retail location
+											| .
+											br
+											br
+											| Proper
+											a(href='http://circle.cspire.com/docs/DOC-1145') installation and activation of a SIM card
+											| is crucial to being able to use your phone internationally.
+								li
+									a(data-toggle='collapse', data-parent='#accordion', href='#collapseFour')
+										span International Loaner Phone Program
+									#collapseFour.collapse
+										div
+											p
+												| If you don’t have a world-capable phone, we can provide you with one for use outside of the continental United States for up to one month.
+												br
+												br
+												| The following criteria must be met in order to participate in the International Loaner Phone program:
+												br
+											ul#faqs
+												li You must be a postpaid customer in good standing for at least one year.
+												li The loaner phone must be requested by the account holder.
+												li You must purchase a SIM card to use in the loaner phone.
+												li
+													| All lines associated with the account holder’s Social Security number must be current. Past-due balances must be paid before being able to participate.
+												li
+													| You must complete the International Loaner Phone agreement.
+													a(href='http://circle.cspire.com/docs/DOC-1146') View a sample of the agreement.
+											p
+												| Please visit a &nbsp;
+												a(href='http://www.cspire.com/coverage/index.jsp#/stores') retail location
+												| to request an international loaner phone or for more information.
+								li
+									a(data-toggle='collapse', data-parent='#accordion', href='#collapseFive')
+										span Checking Voice Mail
+									#collapseFive.collapse
+										p
+											| While in an international location, dial the plus key (+), the US country code (1) and your 10-digit wireless number.
+											br
+											br
+											| Press the star key (*) as soon as you hear your outgoing message. Roaming charges (if applicable) apply when checking your voice mail while outside of the US.
+											br
+											br
+											| Press and hold the zero key (0) to dial the plus key (+).
+								li
+									a(data-toggle='collapse', data-parent='#accordion', href='#collapseSix')
+										span Data Usage
+									#collapseSix.collapse
+										p
+											| Data usage (where available) is billed at $5 per megabyte (MB).
+											br
+											br
+											| How big is a megabyte?
+										ul#faqs
+											li One typically sized photo
+											li One minute of near CD-quality MP3 compressed music
+											li Approximately 100 pages of single-spaced 12-point text in MS Word
+											li 67 email messages at 15KB each
+			#calling.tab-pane
+				.row
+					.col-sm-8
+						h2.color-blue
+							| Calling
+						br
+						p.
+							Calls made to locations outside of the United States, Puerto Rico or the U.S. Virgin Islands are considered international calls. These calls are subject to an international per-minute long distance rate and also use airtime.
+						br
+						p.
+							Calls to Canada or any area that is part of the North American Number Plan (with 10-digit dialing) can be dialed directly and placed without requesting access. Calls to Canada incur international charges. (See chart below.)
+						br
+						p.
+							International calls to all other locations are blocked until you specifically request access. We do not provide the ability to make an international call initially (with the exception of Canada) because making an international call isn't like calling across the country. We want to make sure you're aware of all the charges before you call.
+						br
+						p.
+							Calls placed to an international location<br>
+							If you're calling a location outside of the United States, Puerto Rico or the U.S. Virgin Islands, you'll be charged international long distance rates. Just like with any other call from your phone, you'll also use airtime minutes, if applicable.
+						br
+						.table-responsive
+							table.table.table-bordered-blue.text-center
+								thead
+									tr
+										th
+											p Calls To
+										th
+											p International <br> Long Distance
+								tbody
+									tr
+										td.col-sm-6
+											p North America (includes Canada and non-U.S. Caribbean)
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p Central America and Mexico
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p South America
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p Europe
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p Middle East
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p Australia
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p Asia
+										td.col-sm-6
+											p 50&cent;/min.
+									tr
+										td.col-sm-6
+											p Africa
+										td.col-sm-6
+											p 50&cent;/min.
 
-							.col-sm-4
-								div(style="margin-top:50%;")
-									strong Contact Customer Care
-									p There are several ways to contact us:
-									ul
-										li
-											a(href='mailto:askus@cspire.com') Email
-										li
-											p
-												| Call toll-free &#32;
-												strong 1-855-CSPIRE5 <br>
-												| (277-4735) from any phone
-										li
-											p
-												| Call &#32;
-												strong 611 &#32;
-												| from your C Spire phone
-										li
-											p
-												| Text a message to &#32;
-												strong 611 &#32;
-												| or use the &#32;
-												strong Text<br> CS &#32;
-												| icon on your smartphone
-								br
-								.download
-									a(href='http://circle.cspire.com/docs/DOC-1512', target='_blank') Download/print information
+					.col-sm-4
+						div(style="margin-top:50%;")
+							strong Contact Customer Care
+							p There are several ways to contact us:
+							ul
+								li
+									a(href='mailto:askus@cspire.com') Email
+								li
+									p
+										| Call toll-free &#32;
+										strong 1-855-CSPIRE5 <br>
+										| (277-4735) from any phone
+								li
+									p
+										| Call &#32;
+										strong 611 &#32;
+										| from your C Spire phone
+								li
+									p
+										| Text a message to &#32;
+										strong 611 &#32;
+										| or use the &#32;
+										strong Text<br> CS &#32;
+										| icon on your smartphone
+						br
+						.download
+							a(href='http://circle.cspire.com/docs/DOC-1512', target='_blank') Download/print information
 
-					#texting.tab-pane
-						.row
-							.col-sm-8
-								h1
-									span.color-blue-darker Free Unlimited <br>International Texting
-									|&#32;to 143 <br> countries included in all plans.
-								br
-								br
-								p Countries with free international text messaging
-							.col-sm-4
-						.row
-							.col-sm-8
-								.table-responsive
-									table.table.table-striped.table-bordered.text-center
-										tbody
-											tr
-												td.col-sm-1
-													| A
-												td.col-sm-11
-													| Abkhazia, Albania, American Samoa, Angola, Anguilla, Antigua & Barbuda, Argentina, Armenia, Aruba, Australia.
-											tr
-												td.col-sm-1
-													| B
-												td.col-sm-11
-													| Bahamas, Bahrain, Bangladesh, Barbados, Belgium, Belize, Benin, Bermuda, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, Burundi.
-											tr
-												td.col-sm-1
-													| C, D
-												td.col-sm-11
-													| Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, Colombia, Congo, Costa Rica, Cyprus, Dominica, Dominican Republic.
-											tr
-												td.col-sm-1
-													| E,F,G,H
-												td.col-sm-11
-													| Ecuador, Egypt, El Salvador, Equatorial Guinea, Estonia, Fiji, France, French Guiana, Gabon, Gambia, Germany, Ghana, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hong Kong, Hungary.
-											tr
-												td.col-sm-1
-													| I,J,K,L
-												td.col-sm-11
-													| Iceland, Indonesia, Iran, Ireland, Israel, Italy, Ivory Coast, Jamaica, Japan, Jordan, Latvia, Lebanon, Liberia, Libya, Liechtenstein, Luxembourg.
-											tr
-												td.col-sm-1
-													| M,N,O,P
-												td.col-sm-11
-													| Madagascar, Martinique, Mauritania, Mexico, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Netherlands, Netherlands Antilles, Nicaragua, Niger, Nigeria, Norway, Oman, Panama, Papua New Guinea, Paraguay, Peru, Poland, Portugal, Puerto Rico.
-											tr
-												td.col-sm-1
-													| Q,R,S
-												td.col-sm-11
-													| Qatar, Reunion, Romania, Russian, Rwanda, Saint Barthelemy, Saint Kitts & Nevis, Saint Lucia, Saint Martin, Saint Vincent & the Grenadines, Samoa, Senegal, Slovenia, Somalia, South Africa, South Sudan, Spain, Sudan, Suriname, Swaziland, Sweden, Switzerland.
-											tr
-												td.col-sm-1
-													| T - Z
-												td.col-sm-11
-													| Tajikistan, Tanzania, Thailand, Togo, Trinidad & Tobago, Turkey, Turkmenistan, Turks & Calcos Islands, Uganda, Ukraine, United Kingdom, Uruguay, US Virgin Islands, Uzbekistan, Vanuatu, Venezuela, Vietnam, Yemen, Zambia.
-							.col-sm-4
-								div
-									strong Contact Customer Care
-									p There are several ways to contact us:
-									ul
-										li
-											a(href='mailto:askus@cspire.com') Email
-										li
-											p
-												| Call toll-free &#32;
-												strong 1-855-CSPIRE5 <br>
-												| (277-4735) from any phone
-										li
-											p
-												| Call &#32;
-												strong 611 &#32;
-												| from your C Spire phone
-										li
-											p
-												| Text a message to &#32;
-												strong 611 &#32;
-												| or use the &#32;
-												strong Text<br> CS &#32;
-												| icon on your smartphone
-								br
-								.download
-									a(href='http://circle.cspire.com/docs/DOC-1512', target='_blank') Download/print information
+			#texting.tab-pane
+				.row
+					.col-sm-8
+						h1
+							span.color-blue-darker Free Unlimited <br>International Texting
+							| &#32;to 143 <br> countries included in all plans.
+						br
+						br
+						p Countries with free international text messaging
+					.col-sm-4
+				.row
+					.col-sm-8
+						.table-responsive
+							table.table.table-striped.table-bordered.text-center
+								tbody
+									tr
+										td.col-sm-1
+											| A
+										td.col-sm-11
+											| Abkhazia, Albania, American Samoa, Angola, Anguilla, Antigua & Barbuda, Argentina, Armenia, Aruba, Australia.
+									tr
+										td.col-sm-1
+											| B
+										td.col-sm-11
+											| Bahamas, Bahrain, Bangladesh, Barbados, Belgium, Belize, Benin, Bermuda, Bolivia, Botswana, Brazil, Bulgaria, Burkina Faso, Burundi.
+									tr
+										td.col-sm-1
+											| C, D
+										td.col-sm-11
+											| Cambodia, Cameroon, Canada, Cape Verde, Cayman Islands, Central African Republic, Chad, Chile, Colombia, Congo, Costa Rica, Cyprus, Dominica, Dominican Republic.
+									tr
+										td.col-sm-1
+											| E,F,G,H
+										td.col-sm-11
+											| Ecuador, Egypt, El Salvador, Equatorial Guinea, Estonia, Fiji, France, French Guiana, Gabon, Gambia, Germany, Ghana, Greenland, Grenada, Guadeloupe, Guam, Guatemala, Guinea, Guinea-Bissau, Guyana, Haiti, Honduras, Hong Kong, Hungary.
+									tr
+										td.col-sm-1
+											| I,J,K,L
+										td.col-sm-11
+											| Iceland, Indonesia, Iran, Ireland, Israel, Italy, Ivory Coast, Jamaica, Japan, Jordan, Latvia, Lebanon, Liberia, Libya, Liechtenstein, Luxembourg.
+									tr
+										td.col-sm-1
+											| M,N,O,P
+										td.col-sm-11
+											| Madagascar, Martinique, Mauritania, Mexico, Mongolia, Montenegro, Montserrat, Morocco, Mozambique, Netherlands, Netherlands Antilles, Nicaragua, Niger, Nigeria, Norway, Oman, Panama, Papua New Guinea, Paraguay, Peru, Poland, Portugal, Puerto Rico.
+									tr
+										td.col-sm-1
+											| Q,R,S
+										td.col-sm-11
+											| Qatar, Reunion, Romania, Russian, Rwanda, Saint Barthelemy, Saint Kitts & Nevis, Saint Lucia, Saint Martin, Saint Vincent & the Grenadines, Samoa, Senegal, Slovenia, Somalia, South Africa, South Sudan, Spain, Sudan, Suriname, Swaziland, Sweden, Switzerland.
+									tr
+										td.col-sm-1
+											| T - Z
+										td.col-sm-11
+											| Tajikistan, Tanzania, Thailand, Togo, Trinidad & Tobago, Turkey, Turkmenistan, Turks & Calcos Islands, Uganda, Ukraine, United Kingdom, Uruguay, US Virgin Islands, Uzbekistan, Vanuatu, Venezuela, Vietnam, Yemen, Zambia.
+					.col-sm-4
+						div
+							strong Contact Customer Care
+							p There are several ways to contact us:
+							ul
+								li
+									a(href='mailto:askus@cspire.com') Email
+								li
+									p
+										| Call toll-free &#32;
+										strong 1-855-CSPIRE5 <br>
+										| (277-4735) from any phone
+								li
+									p
+										| Call &#32;
+										strong 611 &#32;
+										| from your C Spire phone
+								li
+									p
+										| Text a message to &#32;
+										strong 611 &#32;
+										| or use the &#32;
+										strong Text<br> CS &#32;
+										| icon on your smartphone
+						br
+						.download
+							a(href='http://circle.cspire.com/docs/DOC-1512', target='_blank') Download/print information
 
 
