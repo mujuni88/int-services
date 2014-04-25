@@ -1,0 +1,255 @@
+@import "variables";
+@import "bootstrap";
+@import "compass";
+
+// Variables
+$sm-handheld: 320px;
+$lg-handheld: 480px;
+$xs-screens: 768px;
+$sm-screens: 992px;
+$lg-screens: 1200px;
+$image-path: "/images/";
+$img-bg: "bg-1920.jpg";
+$container-width: 960px;
+
+// Mixins
+@mixin bg($img-name, $bg-clr: $body-bg) {
+  background: {
+	color: $bg-clr;
+	image: url(#{$image-path}#{$img-name});
+	repeat: no-repeat;
+	position: top center;
+  }
+}
+
+@mixin border-radius($tl: 6px, $tr: 6px, $bl: 0, $br: 0) {
+  border-radius: $tl $tr $bl $br;
+}
+
+@mixin respond-to($media) {
+  @if $media == sm-handheld {
+	@media only screen and (max-width: $sm-handheld) {
+	  @content;
+	}
+  } @else if $media == lg-handheld {
+	@media only screen and (max-width: $lg-handheld) {
+	  @content;
+	}
+  } @else if $media == xs-screens {
+	@media only screen and (max-width: $xs-screens) {
+	  @content;
+	}
+  } @else if $media == sm-screens {
+	@media only screen and (min-width: $sm-screens + 1) {
+	  @content;
+	}
+  } @else if $media == md-screens {
+	@media only screen and (min-width: $sm-screens + 1) {
+	  @content;
+	}
+  } @else if $media == wide-screens {
+	@media only screen and (min-width: $lg-screens) {
+	  @content;
+	}
+  }
+
+}
+
+// Utilities
+.theme_default {
+  @include bg($img-bg);
+  @include background-size();
+}
+
+.pd-5 {
+  padding: 5px;
+}
+
+.pd-10 {
+  padding: 10px;
+}
+
+.pd-right-10 {
+  padding-right: 10px;
+}
+
+.pd-left-10 {
+  padding-left: 10px;
+}
+
+.pd-top-10 {
+  padding-top: 10px;
+}
+
+.pd-btm-10 {
+  padding-bottom: 10px;
+}
+
+.pd-right-20 {
+  padding-right: 20px;
+}
+
+.pd-left-20 {
+  padding-left: 20px;
+}
+
+.pd-top-20 {
+  padding-top: 20px;
+}
+
+.pd-btm-20 {
+  padding-bottom: 20px;
+}
+
+.mg-right-22 {
+  margin-right: 22px;
+}
+
+.mg-btm-0 {
+  margin-bottom: 0;
+}
+
+.pull-up-20 {
+  margin-top: -20px;
+}
+
+.brd-rd-10 {
+  border-radius: 10px;
+}
+
+.brd-top {
+  border-top: 1px solid $gray-lighter;
+}
+
+.brd-bottom {
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.color-blue-darker{
+  color:$color-blue-darker;
+}
+.h1, .color-blue {
+  color: $color-blue-light;
+}
+
+.download {
+  @extend .pd-10;
+  @extend .brd-bottom;
+  @extend .brd-top;
+}
+
+.clr-red {
+  color: red;
+}
+
+.table-bordered-blue > thead > tr > th, .table-bordered-blue > thead > tr > td, .table-bordered-blue > tbody > tr > th, .table-bordered-blue > tbody > tr > td, .table-bordered-blue > tfoot > tr > th, .table-bordered-blue > tfoot > tr > td {
+  border: 2px solid $color-blue-dark;
+  padding:0;
+  vertical-align: middle;
+}
+
+.table-bordered-blue {
+  border-top: 2px solid $color-blue-dark;
+  p{
+	@extend .text-center;
+	margin:0;
+	padding:{
+	  top:5px;
+	  bottom:5px;
+	}
+  }
+
+  thead {
+	th {
+	  background-color: $color-blue-lightest;
+	}
+  }
+
+}
+
+.table {
+  td {
+
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2em;
+  right: 0px;
+  text-decoration: none;
+  color: $body-bg;
+  background-color: $btn-secondary-bg-color-hover;
+  font-size: 12px;
+  padding: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  &:hover {
+	color: $body-bg;
+	background-color: $btn-primary-bg-color-hover;
+  }
+}
+
+// Layout
+.container-fluid {
+  padding: 0;
+}
+
+.container {
+  max-width: $container-width;
+  margin-top: 40px;
+  padding: 0;
+  background-color: $body-bg;
+  @include border-radius()
+
+}
+
+// Headers
+header {
+}
+
+header, main, .tab-content {
+  padding: {
+	left: 40px;
+	right: 10px;
+  }
+}
+
+// Main
+main {
+  background-color: $color-blue-darker;
+  padding-top: 40px;
+
+  // Nav
+  nav {
+
+	.nav-tabs li.active {
+	  z-index: 1;
+	}
+	.nav-tabs li {
+	  margin-right: -8px;
+
+	  a {
+		border: 1px solid $color-blue-darker;
+		border-bottom: 0;
+		background-color: $color-blue-lighter;
+		color: $body-bg;
+		z-index: 0;
+		@include border-radius(10px, 10px);
+
+		&:hover {
+		  color: $color-blue-darker;
+		  z-index: 0;
+		}
+	  }
+	}
+  }
+
+  .tab-content {
+	background-color: $body-bg;
+  }
+}
+
+
+
+
