@@ -21,15 +21,20 @@ html
 		link(rel='stylesheet', href='resources/css/mobile_header.css')
 		link(rel='stylesheet', href='resources/css/mobile_footer.css')
 		link(rel='stylesheet', href='resources/css/promo-int-services.css')
-		//
-			end styles
-		//
-			scripts
+
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="resources/css/promo-int-services-ie.css">
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
 		script(src='resources/js/jquery.1.11.0.min.js')
 		script.
 			var jQuery_1_11_0 = $.noConflict(true);
 		script(src='resources/js/bootstrap-tab.js')
+		script(src='resources/js/angular.min.js')
+		script(src='resources/js/angular-sanatize.min.js')
+		script(src='resources/js/angular-route.min.js')
 		script(src='resources/js/promo-int-services.js')
 	body
 		.container-fluid.theme_default
@@ -38,11 +43,23 @@ html
 					p.h1 International Services
 				main
 					nav
-						ul.nav.nav-tabs.nav-tabs-blue
+						ul.nav.nav-tabs
 							li.active
-								a(href='#home', data-toggle='tab') International Travel
-								li
-									a(href='#profile', data-toggle='tab') International Calling
-								li
-									a(href='#messages', data-toggle='tab') International Texting
+								a(href='#travel') International Travel
+							li
+								a(href='#calling') International Calling
+							li
+								a(href='#texting') International Texting
+
+				//
+					Tab panes
+				.tab-content
+					#travel.tab-pane.active
+						h2.color-blue Travel
+						p.
+							Refer to this information before using your phone outside of the U.S only Certain devices
+
+					#calling.tab-pane
+					#texting.tab-pane
+
 

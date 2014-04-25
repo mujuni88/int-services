@@ -1,0 +1,16 @@
+/* line 4, ../sass/promo-int-services-ie.scss */
+nav .nav-tabs li.active {
+  z-index: 0;
+}
+/* line 7, ../sass/promo-int-services-ie.scss */
+nav .nav-tabs li {
+  margin-right: 0px;
+}
+/* line 10, ../sass/promo-int-services-ie.scss */
+nav .nav-tabs li a {
+  z-index: 0;
+}
+/* line 13, ../sass/promo-int-services-ie.scss */
+nav .nav-tabs li a:hover {
+  z-index: 0;
+}

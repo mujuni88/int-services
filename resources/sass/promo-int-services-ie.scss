@@ -1,0 +1,18 @@
+// Nav
+nav {
+
+  .nav-tabs li.active{
+	z-index: 0;
+  }
+  .nav-tabs li {
+	margin-right: 0px;
+
+	a {
+	  z-index: 0;
+
+	  &:hover {
+		z-index: 0;
+	  }
+	}
+  }
+}

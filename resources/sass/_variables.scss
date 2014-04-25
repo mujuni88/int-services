@@ -18,9 +18,16 @@
 //$gray-light:             lighten(#000, 60%);   // #999
 //$gray-lighter:           lighten(#000, 93.5%); // #eee
 
-$color-blue-dark: #003366;
-$color-blue-light: #00b9f2;
-$color-blue-lighter: #18bde6;
+$color-blue-dark: #0072C7;
+$color-blue-darker: #002146;
+$color-blue-lighter: #28CDFF;
+$color-blue-light: #00AEEF;
+
+$btn-primary-bg-color: $color-blue-darker;
+$btn-primary-bg-color-hover:$color-blue-dark;
+$btn-secondary-bg-color: $color-blue-lighter;
+$btn-secondary-bg-color-hover:$color-blue-light;
+
 
 $brand-primary:         $color-blue-light;
 //$brand-success:         #5cb85c;
@@ -33,7 +40,7 @@ $brand-primary:         $color-blue-light;
 // ## Settings for some of the most global styles.
 
 //* Background color for `<body>`.
-//$body-bg:               #fff;
+$body-bg:               #fff;
 //* Global text color on `<body>`.
 //$text-color:            $gray-dark;
 
@@ -106,9 +113,9 @@ $font-family-sans-serif:  "CSpire", Arial, sans-serif;
 //$border-radius-small:       3px;
 
 //* Global color for active items (e.g., navs or dropdowns).
-//$component-active-color:    #fff;
+$component-active-color:    $color-blue-darker;
 //* Global background color for active items (e.g., navs or dropdowns).
-//$component-active-bg:       $brand-primary;
+$component-active-bg:       $body-bg;
 
 //* Width of the `border` for generating carets that indicator dropdowns.
 //$caret-width-base:          4px;
@@ -146,7 +153,7 @@ $font-family-sans-serif:  "CSpire", Arial, sans-serif;
 //$btn-default-border:             #ccc;
 
 //$btn-primary-color:              #fff;
-//$btn-primary-bg:                 $brand-primary;
+$btn-primary-bg:                 $btn-primary-bg-color;
 //$btn-primary-border:             darken($btn-primary-bg, 5%);
 
 //$btn-success-color:              #fff;
@@ -384,12 +391,12 @@ $font-family-sans-serif:  "CSpire", Arial, sans-serif;
 
 //=== Shared nav styles
 //$nav-link-padding:                          10px 15px;
-//$nav-link-hover-bg:                         $gray-lighter;
+$nav-link-hover-bg:                         $body-bg;
 
-//$nav-disabled-link-color:                   $gray-light;
-//$nav-disabled-link-hover-color:             $gray-light;
+$nav-disabled-link-color:                   $color-blue-darker;
+$nav-disabled-link-hover-color:             $color-blue-darker;
 
-//$nav-open-link-hover-color:                 #fff;
+$nav-open-link-hover-color:                 $color-blue-darker;
 
 //== Tabs
 //$nav-tabs-border-color:                     #ddd;
@@ -397,7 +404,7 @@ $font-family-sans-serif:  "CSpire", Arial, sans-serif;
 //$nav-tabs-link-hover-border-color:          $gray-lighter;
 
 //$nav-tabs-active-link-hover-bg:             $body-bg;
-//$nav-tabs-active-link-hover-color:          $gray;
+$nav-tabs-active-link-hover-color:          $color-blue-darker;
 //$nav-tabs-active-link-hover-border-color:   #ddd;
 
 //$nav-tabs-justified-link-border-color:            #ddd;

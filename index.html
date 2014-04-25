@@ -21,16 +21,17 @@
     -->
     <link rel="stylesheet" href="resources/css/mobile_header.css">
     <link rel="stylesheet" href="resources/css/mobile_footer.css">
-    <link rel="stylesheet" href="resources/css/promo-int-services.css">
-    <!--end styles
-    -->
-    <!--
-    scripts
-    
-    -->
+    <link rel="stylesheet" href="resources/css/promo-int-services.css"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="resources/css/promo-int-services-ie.css">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <script src="resources/js/jquery.1.11.0.min.js"></script>
     <script>var jQuery_1_11_0 = $.noConflict(true);</script>
     <script src="resources/js/bootstrap-tab.js"></script>
+    <script src="resources/js/angular.min.js"></script>
+    <script src="resources/js/angular-sanatize.min.js"></script>
+    <script src="resources/js/angular-route.min.js"></script>
     <script src="resources/js/promo-int-services.js"></script>
   </head>
   <body>
@@ -41,14 +42,26 @@
         </header>
         <main>
           <nav>
-            <ul class="nav nav-tabs nav-tabs-blue">
-              <li class="active"><a href="#home" data-toggle="tab">International Travel</a>
-                <li><a href="#profile" data-toggle="tab">International Calling</a></li>
-                <li><a href="#messages" data-toggle="tab">International Texting</a></li>
-              </li>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#travel">International Travel</a></li>
+              <li><a href="#calling">International Calling</a></li>
+              <li><a href="#texting">International Texting</a></li>
             </ul>
           </nav>
         </main>
+        <!--Tab panes
+        -->
+        <div class="tab-content">
+          <div id="travel" class="tab-pane active">
+            <h2 class="color-blue">Travel</h2>
+            <p>
+              Refer to this information before using your phone outside of the U.S only Certain devices
+              
+            </p>
+          </div>
+          <div id="calling" class="tab-pane"></div>
+          <div id="texting" class="tab-pane"></div>
+        </div>
       </div>
     </div>
   </body>
